@@ -36,4 +36,7 @@
 - [x] Menguatkan entrance animation pada hero, section, kartu, dan register agar terlihat jelas saat halaman digunakan.
 - [x] Menambahkan motion berkelanjutan yang ringan pada elemen visual utama dan marquee kanan-ke-kiri.
 - [x] Memverifikasi animasi pada desktop, mobile, dan reduced-motion sebelum menyimpan checkpoint.
-- [ ] Memastikan repository GitHub privat tersedia dan mendorong source code portfolio terbaru.
+- [x] Memastikan repository GitHub privat tersedia dan mendorong source code portfolio terbaru.
+- [x] Mengekstrak nama dan NPM terverifikasi dari dokumen tugas akhir.
+- [x] Menulis README portfolio yang memuat identitas, fitur, teknologi, cara menjalankan, dan tautan deployment.
+- [x] Memverifikasi README, mendorong pembaruannya ke GitHub, dan menyiapkan checkpoint.
