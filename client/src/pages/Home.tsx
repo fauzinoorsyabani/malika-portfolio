@@ -24,13 +24,14 @@ const ASSETS = {
   caseStudy: "/manus-storage/malika-case-study-abstract_a37b498a.jpg",
   paperDetail: "/manus-storage/malika-paper-texture-detail_c142145d.jpg",
   mark: "/manus-storage/malika-monogram-mark_98ec5ab0.png",
+  portrait: "/manus-storage/malika-portrait_f2240e5c.png",
 };
 
 const navItems = [
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Karya", href: "#work" },
+  { label: "Profil", href: "#about" },
+  { label: "Proses", href: "#process" },
+  { label: "Kontak", href: "#contact" },
 ];
 
 const capabilities = [
@@ -92,9 +93,9 @@ function SectionLabel({ number, children }: { number: string; children: string }
 function Monogram({ className = "" }: { className?: string }) {
   return (
     <svg className={`monogram ${className}`} viewBox="0 0 88 72" aria-hidden="true">
-      <path d="M10 61V14l20 30L49 14v47" />
-      <path d="M44 61 62 13l18 48M51 43h22" />
-      <circle cx="49" cy="14" r="3.5" />
+      <path d="M10 59V16c9 0 12 29 22 29s12-29 22-29c9 0 12 29 22 29V59" />
+      <path d="M17 59c8 0 11-33 22-33s13 33 27 33c7 0 10-13 12-24" />
+      <circle cx="44" cy="45" r="3.7" />
     </svg>
   );
 }
@@ -128,7 +129,7 @@ export default function Home() {
         </nav>
 
         <a className="nav-contact" href="#contact">
-          Let&apos;s connect <ArrowUpRight size={15} strokeWidth={1.8} />
+          Mari terhubung <ArrowUpRight size={15} strokeWidth={1.8} />
         </a>
 
         <button
@@ -186,17 +187,23 @@ export default function Home() {
           </div>
 
           <div className="hero-visual reveal-two">
-            <div className="hero-visual-frame">
-              <img src={ASSETS.hero} alt="Komposisi editorial abstrak yang merepresentasikan alur sistem dan kejelasan proses." />
+            <div className="hero-visual-frame hero-portrait-frame">
+              <img src={ASSETS.portrait} alt="Foto portrait profesional Malika Fanyzar Azzahra." className="hero-portrait" />
+              <div className="portrait-wash" aria-hidden="true" />
+              <div className="portrait-corner-note" aria-hidden="true">
+                <span>Malika</span>
+                <i />
+                <small>Information Systems</small>
+              </div>
             </div>
             <div className="evidence-ticket" aria-hidden="true">
-              <div><span>CASE / 01</span><span>3 ROLES</span><span>27 VALIDATED</span></div>
+              <div><span>KASUS / 01</span><span>3 PERAN</span><span>27 VALID</span></div>
               <i />
-              <p>tracking → follow up → clarity</p>
+              <p>lacak → tindak lanjut → jelas</p>
             </div>
             <div className="visual-caption top-caption">
-              <span>Systems</span>
-              <span>with care</span>
+              <span>Analisis</span>
+              <span>dengan empati</span>
             </div>
             <div className="visual-caption bottom-caption">
               <span className="caption-node" />
@@ -205,8 +212,29 @@ export default function Home() {
           </div>
 
           <div className="hero-footnote reveal-three">
-            <span>Open to opportunities in</span>
+            <span>Terbuka untuk peluang di bidang</span>
             <strong>Business Analysis · Systems Analysis · Digital Solutions</strong>
+          </div>
+        </section>
+
+        <section className="marquee-section" aria-label="Bidang keahlian Malika">
+          <div className="marquee-viewport">
+            <div className="marquee-track">
+              <div className="marquee-set">
+                <span>Systems thinking</span><i>✦</i>
+                <span>Requirements analysis</span><i>✦</i>
+                <span>Web development</span><i>✦</i>
+                <span>Solusi digital yang jelas</span><i>✦</i>
+                <span>Rapi, relevan, manusiawi</span><i>✦</i>
+              </div>
+              <div className="marquee-set" aria-hidden="true">
+                <span>Systems thinking</span><i>✦</i>
+                <span>Requirements analysis</span><i>✦</i>
+                <span>Web development</span><i>✦</i>
+                <span>Solusi digital yang jelas</span><i>✦</i>
+                <span>Rapi, relevan, manusiawi</span><i>✦</i>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -217,10 +245,10 @@ export default function Home() {
 
           <div className="work-heading">
             <div>
-              <p className="kicker">A closer look at how I think and build.</p>
-              <h2 id="work-title">A system is only useful when people can <em>understand</em> its next step.</h2>
+              <p className="kicker">Cara saya memahami dan membangun.</p>
+              <h2 id="work-title">Sistem terasa berguna saat setiap orang memahami langkah berikutnya.</h2>
             </div>
-            <p className="work-heading-note">Featured case study</p>
+            <p className="work-heading-note">Studi kasus unggulan</p>
           </div>
 
           <article className="featured-project" aria-labelledby="project-title">
@@ -245,7 +273,7 @@ export default function Home() {
                   Mengembangkan fitur pelacakan status pada sistem pengaduan UMKM agar pelapor dapat melihat perkembangan tindak lanjut secara mandiri, dengan peran administratif yang tetap terpisah secara jelas.
                 </p>
                 <a href="#case-study" className="button button-dark">
-                  Baca studi kasus <MoveRight size={17} strokeWidth={1.8} />
+                  Lihat studi kasus <MoveRight size={17} strokeWidth={1.8} />
                 </a>
               </div>
             </div>
@@ -272,12 +300,12 @@ export default function Home() {
             <div className="about-art-image">
               <img src={ASSETS.paperDetail} alt="" />
             </div>
-            <span className="about-art-note">Simplicity holds<br />the system together.</span>
+            <span className="about-art-note">Kejelasan merapikan<br />setiap sistem.</span>
           </div>
 
           <div className="about-copy">
             <SectionLabel number="03">About Malika</SectionLabel>
-            <h2 id="about-title">Curious about what makes a digital experience feel <em>clear.</em></h2>
+            <h2 id="about-title">Penasaran dengan hal yang membuat pengalaman digital terasa jelas.</h2>
             <p>
               Saya adalah lulusan Sistem Informasi dari Universitas Siliwangi yang tertarik memahami bagaimana sebuah sistem bekerja dari sisi pengguna, proses, dan kebutuhan bisnis.
             </p>
@@ -298,8 +326,8 @@ export default function Home() {
           <div className="capability-head">
             <SectionLabel number="04">Capabilities</SectionLabel>
             <div>
-              <p className="kicker">What I bring into the room.</p>
-              <h2 id="capability-title">A practical lens for finding structure in the details.</h2>
+              <p className="kicker">Hal yang saya bawa ke setiap proses.</p>
+              <h2 id="capability-title">Cara praktis menemukan struktur di balik setiap detail.</h2>
             </div>
           </div>
 
@@ -323,7 +351,7 @@ export default function Home() {
           <div className="case-top">
             <div>
               <SectionLabel number="05">LaporinAja · Case study</SectionLabel>
-              <h2 id="case-study-title">From a complaint number to a <em>clearer</em> next step.</h2>
+              <h2 id="case-study-title">Dari nomor pengaduan ke langkah selanjutnya yang lebih jelas.</h2>
             </div>
             <div className="case-summary">
               <span className="case-summary-label">The starting point</span>
@@ -354,7 +382,7 @@ export default function Home() {
           <div className="roles-layout">
             <div className="roles-intro">
               <span className="detail-label">Role-based thinking</span>
-              <h3>Three people, one transparent flow.</h3>
+              <h3>Tiga peran, satu alur transparan.</h3>
               <p>Struktur akses membantu memastikan siapa yang dapat memperbarui proses dan siapa yang hanya melakukan monitoring.</p>
             </div>
             <div className="roles-list">
@@ -372,7 +400,7 @@ export default function Home() {
           <div className="tracking-flow">
             <div className="tracking-heading">
               <span className="detail-label">The tracking experience</span>
-              <h3>A simple verification,<br /><em>a visible process.</em></h3>
+              <h3>Verifikasi sederhana,<br />proses yang terlihat.</h3>
             </div>
             <ol className="flow-steps">
               <li><span>01</span><p>Pelapor mengirim pengaduan tanpa perlu login.</p></li>
@@ -385,7 +413,7 @@ export default function Home() {
           <div className="status-board">
             <div className="status-board-copy">
               <span className="detail-label">Status journey</span>
-              <h3>Progress made visible.</h3>
+              <h3>Progres yang terlihat.</h3>
               <p>Status diperbarui Admin Kelurahan dan disinkronkan kembali ke halaman tracking pelapor.</p>
             </div>
             <div className="status-line" aria-label="Alur status pengaduan">
@@ -412,7 +440,7 @@ export default function Home() {
           <div className="rad-layout">
             <div className="rad-copy">
               <span className="detail-label">Method</span>
-              <h3>Fast iteration, guided by real needs.</h3>
+              <h3>Iterasi cepat, berpijak pada kebutuhan nyata.</h3>
               <p>Pengembangan mengikuti pendekatan Rapid Application Development (RAD), karena fokusnya adalah meningkatkan sistem yang sudah ada dengan lingkup yang jelas.</p>
             </div>
             <ol className="rad-list">
@@ -429,7 +457,7 @@ export default function Home() {
             <div className="testing-number">27<span>×</span></div>
             <div className="testing-copy">
               <span className="detail-label">Functional testing</span>
-              <h3>Every documented scenario produced the expected output.</h3>
+              <h3>Setiap skenario terdokumentasi menghasilkan keluaran sesuai harapan.</h3>
             </div>
             <div className="testing-list">
               <span><Check size={14} /> Submission & evidence</span>
@@ -441,7 +469,7 @@ export default function Home() {
 
           <details className="learning-note">
             <summary>
-              <span><Sparkles size={17} /> What I would explore next</span>
+              <span><Sparkles size={17} /> Hal yang ingin saya kembangkan berikutnya</span>
               <ChevronDown size={18} />
             </summary>
             <div>
@@ -454,7 +482,7 @@ export default function Home() {
           <aside className="publication-rail process-publication-rail" aria-hidden="true"><span>06</span><i /><small>WORKING NOTES</small></aside>
           <div className="process-heading">
             <SectionLabel number="06">Process</SectionLabel>
-            <h2 id="process-title">Listen, map, build, <em>learn.</em></h2>
+            <h2 id="process-title">Dengar, petakan, bangun, pelajari.</h2>
           </div>
           <div className="process-grid">
             <article><span>01</span><h3>Listen</h3><p>Memahami konteks, pengguna, dan masalah yang ingin diselesaikan.</p></article>
@@ -468,7 +496,7 @@ export default function Home() {
           <aside className="publication-rail education-publication-rail" aria-hidden="true"><span>07</span><i /><small>RESEARCH TRAIL</small></aside>
           <SectionLabel number="07">Education & milestones</SectionLabel>
           <div className="education-layout">
-            <h2 id="education-title">Built through <em>curiosity</em>, research, and thoughtful practice.</h2>
+            <h2 id="education-title">Tumbuh lewat rasa ingin tahu, riset, dan praktik yang penuh perhatian.</h2>
             <div className="timeline">
               <article>
                 <span>2026</span>
@@ -490,7 +518,7 @@ export default function Home() {
           <aside className="publication-rail contact-publication-rail" aria-hidden="true"><span>08</span><i /><small>OPEN CHANNEL</small></aside>
           <div className="contact-mark-wrap" aria-hidden="true">
             <Monogram className="contact-monogram" />
-            <span>Let&apos;s<br />connect</span>
+            <span>Mari<br />terhubung</span>
           </div>
           <div className="contact-copy">
             <SectionLabel number="08">Contact</SectionLabel>
@@ -510,7 +538,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div><span className="footer-knot"><Monogram /></span><span>© 2026 Malika Fanyzar Azzahra</span><span>Bandung, Indonesia</span></div>
-        <p>Built with curiosity, structure, and care.</p>
+        <p>Dibangun dengan rasa ingin tahu, struktur, dan perhatian.</p>
         <a href="#top" aria-label="Kembali ke atas"><ArrowUpRight size={19} /></a>
       </footer>
     </div>

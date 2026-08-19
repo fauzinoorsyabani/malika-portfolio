@@ -77,3 +77,5 @@ Gunakan monogram **M·A** sebagai tanda visual: dua garis melengkung yang bertem
 - Identitas Malika harus selalu terbaca sebagai monogram simpul **M·A** yang terstruktur, bukan simbol dekoratif generik; logika mark yang sama dipakai pada header, emblem kontak, dan footer.
 - Visual abstrak utama harus menyertakan petunjuk bukti sistem yang nyata, seperti anotasi, flow line, node peran, atau fragmen proses, agar atmosfer visual selalu terkait dengan pekerjaan analitis Malika.
 - Italic serif adalah aksen editorial yang langka: maksimum satu kata atau frasa penting per pesan utama dan tidak digunakan sebagai kebiasaan dekoratif.
+- Portrait Malika diperlakukan sebagai artefak editorial dengan tone material yang hangat, anotasi dan bukti proses, bukan sebagai foto identitas yang ditempelkan mentah.
+- Voice utama menggunakan Bahasa Indonesia yang hangat dan presisi; istilah Bahasa Inggris hanya dipertahankan untuk discipline label profesional yang umum digunakan.
