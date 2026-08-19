@@ -42,3 +42,6 @@
 - [x] Memverifikasi README, mendorong pembaruannya ke GitHub, dan menyiapkan checkpoint.
 - [x] Mengecilkan portrait Malika lebih lanjut pada tampilan mobile tanpa mengubah hero desktop.
 - [x] Memverifikasi komposisi hero mobile dan menjalankan build produksi sebelum menyimpan checkpoint koreksi.
+- [x] Mengekstrak detail tugas akhir terverifikasi untuk case study dan mencatat bahwa tautan demo live akan ditambahkan kemudian.
+- [x] Menambahkan case study tugas akhir dengan status demo *Coming soon* serta tombol scroll-to-top yang muncul setelah scroll pada mobile.
+- [x] Memverifikasi fitur baru pada desktop dan mobile serta menjalankan build produksi; checkpoint dan pengiriman GitHub siap dilakukan.

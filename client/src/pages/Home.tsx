@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   ArrowDownRight,
   ArrowRight,
+  ArrowUp,
   ArrowUpRight,
   Braces,
   Check,
@@ -114,6 +115,7 @@ function SectionMarker({ number, children }: { number: string; children: string 
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
   useEffect(() => {
@@ -132,6 +134,15 @@ export default function Home() {
     targets.forEach((target) => observer.observe(target));
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const updateScrollState = () => setShowScrollTop(window.scrollY > 520);
+    updateScrollState();
+    window.addEventListener("scroll", updateScrollState, { passive: true });
+    return () => window.removeEventListener("scroll", updateScrollState);
+  }, []);
+
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <div className="portfolio-shell">
@@ -267,10 +278,54 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="case-study" className="case-study-section" aria-labelledby="case-study-title" data-reveal>
+          <div className="section-wrap">
+            <div className="case-study-heading">
+              <div className="marker-stack"><SectionMarker number="04">Final project case study</SectionMarker><span className="dossier-stamp">MA // PROJECT RECORD</span></div>
+              <div>
+                <p className="overline">LaporinAja · 2026</p>
+                <h2 id="case-study-title">Complaint tracking, made <em>visible.</em></h2>
+              </div>
+              <p className="heading-note">A web-based public-service complaint information system for the Desa Cinta Statistik programme at Statistics Indonesia (BPS) Kota Tasikmalaya.</p>
+            </div>
+
+            <div className="case-study-lead">
+              <div className="case-study-record">
+                <span>PROJECT / 01</span>
+                <h3>Developing a complaint information system with a self-service tracking flow.</h3>
+                <p>Before this final project, complaint submissions could be received, but reporters could not independently follow the status of their cases. The project extends that flow with traceable complaint progress, verification, status updates, and follow-up information.</p>
+                <div className="case-study-actions">
+                  <span className="case-demo-pending"><i /> Live demo · Coming soon</span>
+                  <span className="case-source">Source: Final Project Record · 2026</span>
+                </div>
+              </div>
+              <div className="case-study-facts" aria-label="Final project facts">
+                <div><small>METHOD</small><strong>Rapid Application Development</strong></div>
+                <div><small>SYSTEM TYPE</small><strong>Web-based public-service information system</strong></div>
+                <div><small>PRIMARY CHANGE</small><strong>Independent complaint tracking</strong></div>
+                <div><small>PROJECT CONTEXT</small><strong>Desa Cinta Statistik · BPS Kota Tasikmalaya</strong></div>
+              </div>
+            </div>
+
+            <div className="case-study-flow" aria-label="LaporinAja system flow">
+              <article><span>01</span><div><small>REPORTER FLOW</small><h3>Submit a complaint</h3><p>UMKM actors can submit a public-service complaint through the system.</p></div></article>
+              <article><span>02</span><div><small>TRACKING FLOW</small><h3>Find and verify</h3><p>A complaint number and the last four WhatsApp digits form a lightweight verification step for status tracking.</p></div></article>
+              <article><span>03</span><div><small>KELURAHAN ADMIN</small><h3>Manage the follow-up</h3><p>Local administrators manage complaint status and maintain follow-up notes.</p></div></article>
+              <article><span>04</span><div><small>BPS ADMIN</small><h3>Review and export</h3><p>BPS administrators can review complaint details and download complaint recap data.</p></div></article>
+            </div>
+
+            <div className="case-study-evidence">
+              <div><span>USER VALUE</span><p>Complaint progress becomes accessible to reporters instead of remaining hidden after submission.</p></div>
+              <div><span>SYSTEM VALUE</span><p>Status, follow-up notes, and administrative access are organised around a traceable complaint record.</p></div>
+              <div><span>NOTIFICATION</span><p>Email messages communicate the complaint number, status changes, and follow-up updates.</p></div>
+            </div>
+          </div>
+        </section>
+
         <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title" data-reveal>
           <div className="section-wrap">
             <div className="roadmap-heading">
-              <div className="marker-stack"><SectionMarker number="04">Growth direction</SectionMarker><span className="dossier-stamp">MA // GROWTH FILE</span></div>
+              <div className="marker-stack"><SectionMarker number="05">Growth direction</SectionMarker><span className="dossier-stamp">MA // GROWTH FILE</span></div>
               <div>
                 <p className="overline">Foundation, development, exploration</p>
                 <h2 id="roadmap-title">Building capability for the <em>next</em> solution.</h2>
@@ -298,7 +353,7 @@ export default function Home() {
         <section className="proof-section" aria-labelledby="proof-title" data-reveal>
           <div className="section-wrap proof-layout">
             <div className="proof-copy">
-              <div className="marker-stack"><SectionMarker number="05">Portfolio foundation</SectionMarker><span className="dossier-stamp">MA // PROFILE REGISTER</span></div>
+              <div className="marker-stack"><SectionMarker number="06">Portfolio foundation</SectionMarker><span className="dossier-stamp">MA // PROFILE REGISTER</span></div>
               <h2 id="proof-title">The foundation behind the <em>direction.</em></h2>
               <p>An Information Systems foundation builds a perspective that connects requirements, processes, data, and user experience into one integrated digital solution.</p>
             </div>
@@ -319,7 +374,7 @@ export default function Home() {
           <div className="section-wrap contact-layout">
             <div className="contact-mark"><Mark /><span>MA //<br />06</span></div>
             <div className="contact-copy">
-              <div className="marker-stack"><SectionMarker number="06">Contact</SectionMarker><span className="dossier-stamp">MA // AVAILABILITY FILE</span></div>
+              <div className="marker-stack"><SectionMarker number="07">Contact</SectionMarker><span className="dossier-stamp">MA // AVAILABILITY FILE</span></div>
               <h2 id="contact-title">Open to <em>Full-Stack Engineering</em> opportunities.</h2>
               <p>For junior roles, development programmes, or engineering collaborations that deepen system and AI foundations, please connect by email or LinkedIn.</p>
               <div className="contact-actions">
@@ -330,6 +385,10 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <button className={`mobile-scroll-top ${showScrollTop ? "is-visible" : ""}`} type="button" onClick={scrollToTop} aria-label="Scroll back to top">
+        <ArrowUp size={18} /><span>TOP</span>
+      </button>
 
       <footer className="site-footer">
         <div><Mark /><span>MA // 01</span><span>© 2026 Malika Fanyzar Azzahra · Indonesia</span></div>
