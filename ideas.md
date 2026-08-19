@@ -2,7 +2,7 @@
 
 ## Arah terpilih: Engineering Field Notes
 
-Portfolio ini diarahkan sebagai **technical dossier** yang personal, tenang, dan siap untuk konteks rekrutmen. Visualnya memadukan panel gelap seperti lingkungan pengembangan, grid teknis yang halus, serta aksen acid green dan cyan yang dipakai terbatas untuk sinyal status, fokus, dan interaksi. Gaya ini meninggalkan narasi pengaduan maupun konsultasi dan menempatkan Malika sebagai kandidat **Full-Stack Engineer yang membangun fondasi menuju AI Engineering**.
+Portfolio ini diarahkan sebagai **technical dossier** yang personal, tenang, dan siap untuk konteks rekrutmen. Visualnya memadukan panel gelap seperti lingkungan pengembangan, grid teknis yang halus, serta aksen pink magenta dan cyan yang dipakai terbatas untuk sinyal status, fokus, dan interaksi. Gaya ini meninggalkan narasi pengaduan maupun konsultasi dan menempatkan Malika sebagai kandidat **Full-Stack Engineer yang membangun fondasi menuju AI Engineering**.
 
 ## Prinsip konten
 
@@ -10,7 +10,7 @@ Konten harus memprioritaskan bukti engineering: peran target, pendekatan kerja, 
 
 ## Prinsip visual
 
-Gunakan komposisi asimetris dengan rail bernomor, grid tipis, metadata monospace, dan tipografi Space Grotesk yang tegas. Portrait asli Malika tetap menjadi elemen personal yang utama, tetapi ditempatkan dalam frame teknis dengan anotasi engineering. Hindari neon berlebihan, kartu seragam, dan visual AI generik seperti otak bercahaya atau robot humanoid.
+Gunakan komposisi asimetris dengan rail bernomor, grid tipis, metadata monospace, dan tipografi Space Grotesk yang tegas. Portrait asli Malika tetap menjadi elemen personal yang utama, tetapi ditempatkan dalam frame teknis tanpa filter, overlay, atau anotasi yang menutupi foto. Hindari neon berlebihan, kartu seragam, dan visual AI generik seperti otak bercahaya atau robot humanoid.
 
 ## Arsitektur informasi
 
@@ -25,12 +25,12 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - Pink magenta yang teredam menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
 - Monogram, wordmark, dan label `MA // 01` diperlakukan sebagai sistem stempel dossier yang konsisten pada header, portrait, contact, dan footer.
 - Supporting copy harus evidence-led: utamakan scope, decision, trade-off, roadmap, repository, deployment, evaluation, dan planned build daripada motivasi generik.
-- Navigasi dan CTA utama menggunakan Bahasa Indonesia profesional. Headline hero utama menggunakan English untuk kebutuhan positioning kerja lintas pasar, sedangkan istilah engineering seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation dipertahankan apa adanya.
+- Navigasi, CTA, dan headline utama menggunakan Bahasa Indonesia profesional. Istilah engineering seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation dipertahankan apa adanya bila lebih lazim digunakan.
 - Setiap section utama membawa perangkat dossier yang terlihat, seperti numbered rail, status stamp `MA //`, metadata scope, atau penanda evidence agar identitas technical file berlanjut di seluruh halaman.
 - Muted magenta adalah aksen primer untuk CTA, fokus, status, dan highlight headline; cyan/teal dipakai sekunder hanya pada metadata sistem, roadmap state, atau anotasi teknis.
-- Portrait Malika diperlakukan sebagai aset dossier teknis: dibuat harmonis dengan palet magenta, diberi frame, stamp `MA // ID.01`, dan anotasi, bukan disajikan sebagai foto formal mentah.
+- Portrait Malika diperlakukan sebagai aset dossier teknis melalui frame dan konteks sekelilingnya, tetapi foto asli tetap natural tanpa filter, stamp, atau anotasi di atasnya.
 - Register bukti menggunakan format yang dapat diverifikasi: label case study, decision log, evaluation, dan release disertai status planned atau pending hingga artefak nyata tersedia.
-- All public-facing portfolio copy uses professional English. Names, contact data, and industry-standard technical terms are retained as appropriate.
+- Seluruh copy public-facing menggunakan Bahasa Indonesia profesional. Nama, data kontak, dan istilah teknis yang lebih lazim dalam Bahasa Inggris dipertahankan sebagaimana mestinya.
 - The original portrait remains unobscured and unfiltered at the user’s request; surrounding grid and dossier framing provide the visual integration without applying effects to the photograph.
-- Project showcase cards use Mac-style browser window mockups with three traffic-light dots. They must be labelled as planned concepts until an actual product screenshot, repository, and demo are available.
+- Roadmap menampilkan tahapan fokus Full-Stack dan AI Engineering secara jujur sampai case study nyata, repository, dan demo tersedia.
 - A Download CV CTA may use an animated request state until a real CV file or public download URL is provided; it must not imply a file is already downloadable.

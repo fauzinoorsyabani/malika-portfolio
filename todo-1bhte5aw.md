@@ -23,3 +23,6 @@
 - [x] Menambahkan tombol Download CV dengan hover yang menarik pada hero utama.
 - [x] Mengganti roadmap dengan tiga showcase proyek bergaya layar Mac dan menyiapkan status GitHub/demo tanpa tautan palsu.
 - [x] Memverifikasi showcase pada desktop dan mobile, menjalankan build, dan memvalidasi skill sebelum menyimpan checkpoint.
+- [x] Mengembalikan seluruh copy antarmuka portfolio ke Bahasa Indonesia profesional.
+- [x] Menghapus showcase proyek bergaya Mac dan mengembalikan roadmap awal.
+- [x] Memverifikasi Bahasa Indonesia dan roadmap yang dipulihkan pada desktop serta mobile, lalu menjalankan build produksi.
