@@ -24,10 +24,10 @@ const ASSETS = {
 };
 
 const navigation = [
-  { label: "Keahlian", href: "#focus" },
-  { label: "Proses", href: "#approach" },
-  { label: "Pertumbuhan", href: "#roadmap" },
-  { label: "Kontak", href: "#contact" },
+  { label: "Expertise", href: "#focus" },
+  { label: "Process", href: "#approach" },
+  { label: "Growth", href: "#roadmap" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const focusAreas = [
@@ -36,7 +36,7 @@ const focusAreas = [
     evidence: "ANALYSIS / SCOPE",
     icon: Code2,
     title: "Requirements analysis",
-    copy: "Menyusun kebutuhan, tujuan, dan batasan menjadi ruang lingkup yang lebih jelas sebelum sebuah solusi dibangun.",
+    copy: "Turning goals, requirements, and constraints into a clearer scope before a solution is built.",
     tags: ["User Needs", "Scope", "Requirements"],
   },
   {
@@ -44,7 +44,7 @@ const focusAreas = [
     evidence: "SYSTEM / STRUCTURE",
     icon: Database,
     title: "System analysis",
-    copy: "Memetakan alur, data, aktor, dan aturan agar keputusan sistem dapat dijelaskan serta ditinjau kembali.",
+    copy: "Mapping flows, data, actors, and rules so system decisions can be explained and reviewed.",
     tags: ["System Flow", "Data", "Use Case"],
   },
   {
@@ -52,44 +52,44 @@ const focusAreas = [
     evidence: "SOLUTION / DIRECTION",
     icon: Sparkles,
     title: "Digital solutions",
-    copy: "Menghubungkan analisis bisnis dan sistem menjadi pengalaman digital yang terstruktur, relevan, dan siap dikembangkan.",
+    copy: "Connecting business and system analysis into structured, relevant digital experiences that are ready to grow.",
     tags: ["Business Needs", "System Design", "Digital Product"],
   },
 ];
 
 const workflow = [
-  ["01", "Membaca kebutuhan", "Menyatukan tujuan, pengguna, informasi, dan batasan sebagai dasar pengambilan keputusan."],
-  ["02", "Memetakan sistem", "Menerjemahkan kebutuhan menjadi alur proses, peran pengguna, serta struktur informasi yang saling terhubung."],
-  ["03", "Merancang solusi", "Menyusun pengalaman digital yang membantu pengguna menyelesaikan pekerjaan dengan lebih jelas dan terarah."],
-  ["04", "Mencatat keputusan", "Menjaga asumsi, scope, dan alasan di balik solusi agar proses berikutnya dapat ditinjau serta ditingkatkan."],
+  ["01", "Read the requirements", "Bring goals, users, information, and constraints together as a foundation for decisions."],
+  ["02", "Map the system", "Translate requirements into process flows, user roles, and connected information structures."],
+  ["03", "Shape the solution", "Design digital experiences that help users complete work with more clarity and direction."],
+  ["04", "Record decisions", "Keep assumptions, scope, and rationale visible so each next step can be reviewed and improved."],
 ];
 
 const roadmap = [
   {
-    state: "Fondasi saat ini",
+    state: "Current foundation",
     title: "Information Systems",
-    copy: "Lulusan Sistem Informasi Universitas Siliwangi dengan fokus pada requirements analysis, systems analysis, dan digital solutions.",
+    copy: "Information Systems graduate from Universitas Siliwangi, focused on requirements analysis, systems analysis, and digital solutions.",
     tone: "active",
   },
   {
-    state: "Arah berikutnya",
+    state: "Next direction",
     title: "Full-Stack foundations",
-    copy: "Mendalami proses membangun aplikasi web dari kebutuhan pengguna, struktur sistem, hingga pengalaman digital yang dapat digunakan.",
+    copy: "Deepening the practice of building web applications from user requirements and system structure to usable digital experiences.",
     tone: "planned",
   },
   {
-    state: "Eksplorasi lanjutan",
+    state: "Further exploration",
     title: "AI-enabled solutions",
-    copy: "Mempelajari bagaimana AI dapat memperkuat solusi digital melalui alur yang bertanggung jawab, terukur, dan berpusat pada kebutuhan pengguna.",
+    copy: "Exploring how AI can strengthen digital solutions through responsible, measurable, user-centred workflows.",
     tone: "planned",
   },
 ];
 
 const proofRecords = [
   ["FOUNDATION", "Information Systems · Universitas Siliwangi", "2022—2026"],
-  ["FOCUS", "Requirements Analysis dan Systems Analysis", "AKTIF"],
-  ["DIRECTION", "Full-Stack dan AI-enabled Digital Solutions", "BERTUMBUH"],
-  ["LOCATION", "Bandung, Jawa Barat, Indonesia", "INDONESIA"],
+  ["FOCUS", "Requirements Analysis and Systems Analysis", "ACTIVE"],
+  ["DIRECTION", "Full-Stack and AI-enabled Digital Solutions", "GROWING"],
+  ["LOCATION", "Bandung, West Java, Indonesia", "INDONESIA"],
 ];
 
 function Mark({ className = "" }: { className?: string }) {
@@ -135,27 +135,27 @@ export default function Home() {
 
   return (
     <div className="portfolio-shell">
-      <a className="skip-link" href="#main-content">Lewati ke konten utama</a>
+      <a className="skip-link" href="#main-content">Skip to main content</a>
 
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Kembali ke beranda Malika">
+        <a className="brand" href="#top" aria-label="Back to Malika's home page">
           <span className="brand-mark"><img src={ASSETS.mark} alt="" /><Mark /></span>
           <span className="brand-name">Malika<span>.</span></span>
           <small><b>MA // 01</b><span>Portfolio<br />Engineering</span></small>
         </a>
 
-        <nav className="desktop-nav" aria-label="Navigasi utama">
+        <nav className="desktop-nav" aria-label="Primary navigation">
           {navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
         </nav>
 
-        <a className="header-contact" href="#contact">Terbuka untuk peran <ArrowUpRight size={15} /></a>
-        <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label={menuOpen ? "Tutup menu" : "Buka menu"}>
+        <a className="header-contact" href="#contact">Open to roles <ArrowUpRight size={15} /></a>
+        <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label={menuOpen ? "Close menu" : "Open menu"}>
           {menuOpen ? <X size={22} /> : <Menu size={23} />}
         </button>
       </header>
 
       <div className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
-        <span className="mobile-menu-label">Navigasi</span>
+        <span className="mobile-menu-label">Navigate</span>
         {navigation.map((item, index) => (
           <a key={item.href} href={item.href} onClick={closeMenu}>
             <span>0{index + 1}</span>{item.label}<ArrowDownRight size={23} />
@@ -169,16 +169,16 @@ export default function Home() {
           <aside className="hero-rail" aria-hidden="true"><span>01</span><i /><small>PORTFOLIO / 2026</small></aside>
 
           <div className="hero-copy reveal-one">
-            <div className="eyebrow"><span /> Portfolio Sistem Informasi · Bandung, Indonesia</div>
+            <div className="eyebrow"><span /> Information Systems Portfolio · Bandung, Indonesia</div>
             <p className="hero-kicker">FULL-STACK ENGINEER · INFORMATION SYSTEMS</p>
-            <h1 id="hero-title">Sistem Full-Stack, dibangun dari <em>kebutuhan</em> yang jelas.</h1>
-            <p className="hero-summary">Portfolio kandidat Full-Stack Engineer dengan dasar Information Systems: menyusun kebutuhan menjadi alur, struktur sistem, dan arah AI Engineering yang dapat ditinjau serta dikembangkan.</p>
+            <h1 id="hero-title">Full-Stack systems, built from <em>clear</em> requirements.</h1>
+            <p className="hero-summary">A Full-Stack Engineer portfolio grounded in Information Systems: translating requirements into flows, system structures, and an AI Engineering direction that can be reviewed and developed.</p>
             <div className="hero-actions">
-              <a className="button button-light" href="#focus">Lihat bidang fokus <ArrowRight size={17} /></a>
-              <a className="inline-link" href="#roadmap">Lihat roadmap AI <ArrowDownRight size={17} /></a>
-              <a className="button button-cv" href="/manus-storage/malika-profile-cv_b8f7a275.pdf" target="_blank" rel="noreferrer"><span>Unduh CV</span><Download size={16} /></a>
+              <a className="button button-light" href="#focus">Explore expertise <ArrowRight size={17} /></a>
+              <a className="inline-link" href="#roadmap">View AI roadmap <ArrowDownRight size={17} /></a>
+              <a className="button button-cv" href="/manus-storage/malika-profile-cv_b8f7a275.pdf" target="_blank" rel="noreferrer"><span>Download CV</span><Download size={16} /></a>
             </div>
-            <div className="signal-row" aria-label="Bidang kompetensi utama">
+            <div className="signal-row" aria-label="Core focus areas">
               <span><Braces size={15} /> Requirements analysis</span>
               <span><Network size={15} /> System analysis</span>
               <span><Sparkles size={15} /> AI Engineering roadmap</span>
@@ -188,7 +188,7 @@ export default function Home() {
           <div className="hero-visual reveal-two">
             <div className="portrait-grid" aria-hidden="true" />
             <div className="portrait-frame">
-              <img src={ASSETS.portrait} alt="Foto portrait profesional Malika Fanyzar Azzahra." />
+              <img src={ASSETS.portrait} alt="Professional portrait of Malika Fanyzar Azzahra." />
             </div>
           </div>
 
@@ -198,14 +198,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="motion-marquee" aria-label="Bidang engineering">
+        <section className="motion-marquee" aria-label="Engineering disciplines">
           <div className="marquee-viewport">
             <div className="marquee-track">
               <div className="marquee-set">
-                <span>FULL-STACK ENGINEERING</span><i>✦</i><span>SISTEM INTERFACE</span><i>✦</i><span>DESAIN API</span><i>✦</i><span>AI ENGINEERING</span><i>✦</i><span>DELIVERY RELIABLE</span><i>✦</i>
+                <span>FULL-STACK ENGINEERING</span><i>✦</i><span>INTERFACE SYSTEMS</span><i>✦</i><span>API DESIGN</span><i>✦</i><span>AI ENGINEERING</span><i>✦</i><span>RELIABLE DELIVERY</span><i>✦</i>
               </div>
               <div className="marquee-set" aria-hidden="true">
-                <span>FULL-STACK ENGINEERING</span><i>✦</i><span>SISTEM INTERFACE</span><i>✦</i><span>DESAIN API</span><i>✦</i><span>AI ENGINEERING</span><i>✦</i><span>DELIVERY RELIABLE</span><i>✦</i>
+                <span>FULL-STACK ENGINEERING</span><i>✦</i><span>INTERFACE SYSTEMS</span><i>✦</i><span>API DESIGN</span><i>✦</i><span>AI ENGINEERING</span><i>✦</i><span>RELIABLE DELIVERY</span><i>✦</i>
               </div>
             </div>
           </div>
@@ -214,12 +214,12 @@ export default function Home() {
         <section id="focus" className="focus-section" aria-labelledby="focus-title" data-reveal>
           <div className="section-wrap">
             <div className="section-heading">
-              <div className="marker-stack"><SectionMarker number="02">Bidang kompetensi</SectionMarker><span className="dossier-stamp">MA // FOCUS FILE</span></div>
+              <div className="marker-stack"><SectionMarker number="02">Core expertise</SectionMarker><span className="dossier-stamp">MA // FOCUS FILE</span></div>
               <div>
-                <p className="overline">Dari insight menuju solusi</p>
-                <h2 id="focus-title">Kompetensi yang membentuk <em>sistem</em> digital.</h2>
+                <p className="overline">From insight to implementation</p>
+                <h2 id="focus-title">The capabilities behind <em>digital</em> systems.</h2>
               </div>
-              <p className="heading-note">Rekrutmen-ready berarti mampu menjelaskan kebutuhan, struktur sistem, keputusan implementasi, serta arah pengembangan teknologi berikutnya.</p>
+              <p className="heading-note">Recruitment-ready means being able to explain requirements, system structure, implementation decisions, and the direction of the next technology layer.</p>
             </div>
 
             <div className="focus-grid">
@@ -231,29 +231,29 @@ export default function Home() {
                     <h3>{area.title}</h3>
                     <p>{area.copy}</p>
                     <div className="tag-list">{area.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                    <div className="focus-card-state"><span>Bidang fokus</span><b>Kompetensi yang terus dikembangkan</b></div>
+                    <div className="focus-card-state"><span>Focus area</span><b>Capability in active development</b></div>
                   </article>
                 );
               })}
             </div>
 
-            <div className="focus-evidence" aria-label="Catatan sistem">
-              <div><span>CATATAN SISTEM / 01</span><strong>Tujuan sebelum tools</strong><p>Setiap solusi berangkat dari tujuan pengguna, kebutuhan informasi, dan batasan yang perlu dipahami lebih dulu.</p></div>
-              <div><span>CATATAN SISTEM / 02</span><strong>Struktur sebelum fitur</strong><p>Alur proses, peran pengguna, serta struktur data menjadi pijakan agar pengalaman digital tidak dibangun secara terpisah.</p></div>
-              <div><span>CATATAN SISTEM / 03</span><strong>Keputusan perlu alasan</strong><p>Scope, alur, dan keputusan sistem sebaiknya dapat dijelaskan agar solusi mudah ditinjau serta dikembangkan.</p></div>
+            <div className="focus-evidence" aria-label="System notes">
+              <div><span>SYSTEM NOTE / 01</span><strong>Goals before tools</strong><p>Every solution begins with user goals, information needs, and constraints that need to be understood first.</p></div>
+              <div><span>SYSTEM NOTE / 02</span><strong>Structure before features</strong><p>Process flows, user roles, and data structures create a foundation so digital experiences are not built in isolation.</p></div>
+              <div><span>SYSTEM NOTE / 03</span><strong>Decisions need rationale</strong><p>Scope, flows, and system decisions should be explainable so a solution remains easy to review and develop.</p></div>
             </div>
 
-            <div className="focus-note"><ShieldCheck size={18} /><p><strong>Dasar yang terverifikasi.</strong> Portfolio ini berangkat dari latar Sistem Informasi dengan fokus pada requirements analysis, systems analysis, dan digital solutions.</p></div>
+            <div className="focus-note"><ShieldCheck size={18} /><p><strong>Verified foundation.</strong> This portfolio is grounded in Information Systems with a focus on requirements analysis, systems analysis, and digital solutions.</p></div>
           </div>
         </section>
 
         <section id="approach" className="approach-section" aria-labelledby="approach-title" data-reveal>
           <div className="section-wrap approach-layout">
             <div className="approach-intro">
-              <div className="marker-stack"><SectionMarker number="03">Proses kerja</SectionMarker><span className="dossier-stamp">MA // DECISION LOG</span></div>
-              <h2 id="approach-title">Dari kebutuhan menuju <em>implementasi.</em></h2>
-              <p>Setiap build perlu membuat keputusan terlihat: kebutuhan apa yang diprioritaskan, alur mana yang dilayani, dan struktur apa yang menjaga sistem tetap jelas.</p>
-              <div className="approach-mark"><Mark /><span>Kejelasan adalah bagian dari implementasi.</span></div>
+              <div className="marker-stack"><SectionMarker number="03">Working process</SectionMarker><span className="dossier-stamp">MA // DECISION LOG</span></div>
+              <h2 id="approach-title">From requirements to <em>implementation.</em></h2>
+              <p>Every build should make decisions visible: which requirements are prioritised, which flows are served, and which structure keeps the system clear.</p>
+              <div className="approach-mark"><Mark /><span>Clarity is part of the implementation.</span></div>
             </div>
             <ol className="workflow-list">
               {workflow.map(([number, title, copy]) => (
@@ -270,10 +270,10 @@ export default function Home() {
         <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title" data-reveal>
           <div className="section-wrap">
             <div className="roadmap-heading">
-              <div className="marker-stack"><SectionMarker number="04">Arah pertumbuhan</SectionMarker><span className="dossier-stamp">MA // GROWTH FILE</span></div>
+              <div className="marker-stack"><SectionMarker number="04">Growth direction</SectionMarker><span className="dossier-stamp">MA // GROWTH FILE</span></div>
               <div>
-                <p className="overline">Fondasi, pengembangan, eksplorasi</p>
-                <h2 id="roadmap-title">Membangun kapabilitas untuk <em>solusi</em> berikutnya.</h2>
+                <p className="overline">Foundation, development, exploration</p>
+                <h2 id="roadmap-title">Building capability for the <em>next</em> solution.</h2>
               </div>
             </div>
 
@@ -283,14 +283,14 @@ export default function Home() {
                   <div className="roadmap-card-head"><span>{String(index + 1).padStart(2, "0")}</span><small>{item.state}</small></div>
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
-                  <div className="roadmap-line"><i /><span>{item.tone === "active" ? "Fondasi aktif" : "Arah pengembangan"}</span></div>
+                  <div className="roadmap-line"><i /><span>{item.tone === "active" ? "Active foundation" : "Growth direction"}</span></div>
                 </article>
               ))}
             </div>
 
             <div className="research-strip">
-              <div><Layers3 size={21} /><span>Prinsip solusi</span></div>
-              <p>Teknologi dipilih untuk memperjelas proses, membantu pengguna mengambil keputusan, dan memperkuat kualitas solusi digital—bukan semata untuk menambah fitur.</p>
+              <div><Layers3 size={21} /><span>Solution principle</span></div>
+              <p>Technology is selected to clarify processes, help users make decisions, and strengthen the quality of a digital solution—not simply to add features.</p>
             </div>
           </div>
         </section>
@@ -298,11 +298,11 @@ export default function Home() {
         <section className="proof-section" aria-labelledby="proof-title" data-reveal>
           <div className="section-wrap proof-layout">
             <div className="proof-copy">
-              <div className="marker-stack"><SectionMarker number="05">Fondasi portfolio</SectionMarker><span className="dossier-stamp">MA // PROFILE REGISTER</span></div>
-              <h2 id="proof-title">Latar yang membentuk <em>arah</em> kerja.</h2>
-              <p>Dasar Sistem Informasi membangun cara pandang yang menghubungkan kebutuhan, proses, data, dan pengalaman pengguna ke dalam satu solusi digital yang utuh.</p>
+              <div className="marker-stack"><SectionMarker number="05">Portfolio foundation</SectionMarker><span className="dossier-stamp">MA // PROFILE REGISTER</span></div>
+              <h2 id="proof-title">The foundation behind the <em>direction.</em></h2>
+              <p>An Information Systems foundation builds a perspective that connects requirements, processes, data, and user experience into one integrated digital solution.</p>
             </div>
-            <div className="proof-list" aria-label="Register profil portfolio">
+            <div className="proof-list" aria-label="Portfolio profile register">
               {proofRecords.map(([label, copy, status]) => (
                 <div key={label}>
                   <Check size={18} />
@@ -319,12 +319,12 @@ export default function Home() {
           <div className="section-wrap contact-layout">
             <div className="contact-mark"><Mark /><span>MA //<br />06</span></div>
             <div className="contact-copy">
-              <div className="marker-stack"><SectionMarker number="06">Kontak</SectionMarker><span className="dossier-stamp">MA // AVAILABILITY FILE</span></div>
-              <h2 id="contact-title">Terbuka untuk peluang <em>Full-Stack Engineering.</em></h2>
-              <p>Untuk peluang kerja junior, program pengembangan, atau kolaborasi engineering yang memperluas fondasi sistem dan AI, silakan terhubung melalui email dan LinkedIn.</p>
+              <div className="marker-stack"><SectionMarker number="06">Contact</SectionMarker><span className="dossier-stamp">MA // AVAILABILITY FILE</span></div>
+              <h2 id="contact-title">Open to <em>Full-Stack Engineering</em> opportunities.</h2>
+              <p>For junior roles, development programmes, or engineering collaborations that deepen system and AI foundations, please connect by email or LinkedIn.</p>
               <div className="contact-actions">
                 <a className="button button-light" href="mailto:malikafanyzara34@gmail.com">Email Malika <Mail size={17} /></a>
-                <a className="inline-link light-link" href="https://www.linkedin.com/in/malika-fanyzar-azzahra-49873b292" target="_blank" rel="noreferrer">Profil LinkedIn <ArrowUpRight size={17} /></a>
+                <a className="inline-link light-link" href="https://www.linkedin.com/in/malika-fanyzar-azzahra-49873b292" target="_blank" rel="noreferrer">LinkedIn profile <ArrowUpRight size={17} /></a>
               </div>
             </div>
           </div>
@@ -333,8 +333,8 @@ export default function Home() {
 
       <footer className="site-footer">
         <div><Mark /><span>MA // 01</span><span>© 2026 Malika Fanyzar Azzahra · Indonesia</span></div>
-        <p>MA // Catatan Engineering</p>
-        <a href="#top" aria-label="Kembali ke atas"><ArrowUpRight size={19} /></a>
+        <p>MA // Engineering field notes</p>
+        <a href="#top" aria-label="Back to top"><ArrowUpRight size={19} /></a>
       </footer>
     </div>
   );

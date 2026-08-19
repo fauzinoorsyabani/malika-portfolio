@@ -18,19 +18,19 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 
 ## Style Decisions
 
-- Bahasa utama tetap Indonesia yang profesional, dengan istilah engineering Bahasa Inggris yang lazim untuk kebutuhan rekrutmen.
+- Bahasa utama public-facing adalah English profesional, dengan nama dan data identitas dipertahankan apa adanya.
 - CTA mengarah ke eksplorasi portfolio dan kontak terkait peluang kerja, bukan jasa konsultasi.
 - AI diposisikan sebagai jalur pengembangan yang terukur: retrieval, structured output, evaluation, reliability, dan deployment lebih penting daripada klaim agent atau chatbot semata.
 - Setelah data tersedia, bagian roadmap harus diprioritaskan untuk diganti menjadi case study nyata dan tautan GitHub atau demo.
 - Pink magenta yang teredam menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
 - Monogram, wordmark, dan label `MA // 01` diperlakukan sebagai sistem stempel dossier yang konsisten pada header, portrait, contact, dan footer.
 - Supporting copy harus evidence-led: utamakan scope, decision, trade-off, roadmap, repository, deployment, evaluation, dan planned build daripada motivasi generik.
-- Navigasi, CTA, dan headline utama menggunakan Bahasa Indonesia profesional. Istilah engineering seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation dipertahankan apa adanya bila lebih lazim digunakan.
+- Navigation, CTAs, and the primary headline use professional English. Technical terms such as Full-Stack, AI Engineering, RAG, deployment, and evaluation are retained as appropriate.
 - Setiap section utama membawa perangkat dossier yang terlihat, seperti numbered rail, status stamp `MA //`, metadata scope, atau penanda evidence agar identitas technical file berlanjut di seluruh halaman.
 - Muted magenta adalah aksen primer untuk CTA, fokus, status, dan highlight headline; cyan/teal dipakai sekunder hanya pada metadata sistem, roadmap state, atau anotasi teknis.
 - Portrait Malika diperlakukan sebagai aset dossier teknis melalui frame dan konteks sekelilingnya, tetapi foto asli tetap natural tanpa filter, stamp, atau anotasi di atasnya.
 - Register bukti menggunakan format yang dapat diverifikasi: label case study, decision log, evaluation, dan release disertai status planned atau pending hingga artefak nyata tersedia.
-- Seluruh copy public-facing menggunakan Bahasa Indonesia profesional. Nama, data kontak, dan istilah teknis yang lebih lazim dalam Bahasa Inggris dipertahankan sebagaimana mestinya.
+- All public-facing portfolio copy uses professional English. Names, contact data, and technical terms are retained as appropriate.
 - The original portrait remains unobscured and unfiltered at the user’s request; surrounding grid and dossier framing provide the visual integration without applying effects to the photograph.
 - Roadmap menampilkan tahapan fokus Full-Stack dan AI Engineering secara jujur sampai case study nyata, repository, dan demo tersedia.
 - A Download CV CTA may use an animated request state until a real CV file or public download URL is provided; it must not imply a file is already downloadable.

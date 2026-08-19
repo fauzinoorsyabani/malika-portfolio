@@ -31,3 +31,5 @@
 - [x] Meninjau CV dan referensi untuk mengidentifikasi fakta serta pencapaian yang dapat digunakan secara aman.
 - [x] Menyusun ulang hero dan isi portfolio agar berorientasi karya, kontribusi, dan hasil yang terverifikasi.
 - [x] Memverifikasi struktur konten baru pada desktop dan mobile serta menjalankan build produksi sebelum menyimpan checkpoint.
+- [x] Mengubah seluruh copy public-facing portfolio ke Bahasa Inggris profesional.
+- [x] Memverifikasi copy Inggris, layout responsif, dan build produksi sebelum menyimpan checkpoint.
