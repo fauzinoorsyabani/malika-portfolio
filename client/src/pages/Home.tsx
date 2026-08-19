@@ -25,10 +25,10 @@ const ASSETS = {
 };
 
 const navigation = [
-  { label: "Focus", href: "#focus" },
-  { label: "Approach", href: "#approach" },
+  { label: "Fokus", href: "#focus" },
+  { label: "Pendekatan", href: "#approach" },
   { label: "Roadmap", href: "#roadmap" },
-  { label: "Contact", href: "#contact" },
+  { label: "Kontak", href: "#contact" },
 ];
 
 const focusAreas = [
@@ -36,7 +36,7 @@ const focusAreas = [
     index: "01",
     evidence: "UI / SCOPE",
     icon: Code2,
-    title: "Interface systems",
+    title: "Sistem interface",
     copy: "Membangun antarmuka yang responsif, mudah dipahami, dan tersusun dari komponen yang dapat dipelihara.",
     tags: ["React", "TypeScript", "Accessible UI"],
   },
@@ -44,7 +44,7 @@ const focusAreas = [
     index: "02",
     evidence: "SYSTEM / SCOPE",
     icon: Database,
-    title: "Application foundations",
+    title: "Fondasi aplikasi",
     copy: "Menerjemahkan kebutuhan menjadi struktur data, kontrak API, alur autentikasi, dan logika aplikasi yang jelas.",
     tags: ["API Design", "Data Modeling", "System Design"],
   },
@@ -52,35 +52,35 @@ const focusAreas = [
     index: "03",
     evidence: "AI / ROADMAP",
     icon: Sparkles,
-    title: "AI-ready products",
+    title: "Produk siap AI",
     copy: "Mempelajari cara mengintegrasikan model AI secara bertanggung jawab melalui output terstruktur, retrieval, evaluasi, dan guardrail.",
     tags: ["LLM Integration", "RAG", "Evaluation"],
   },
 ];
 
 const workflow = [
-  ["01", "Frame the system", "Memahami pengguna, batasan, data, dan keputusan yang harus dibuat oleh aplikasi."],
-  ["02", "Build the path", "Menyusun pengalaman antarmuka, API, dan struktur aplikasi sebagai satu alur yang saling mendukung."],
-  ["03", "Validate behaviour", "Menguji alur penting, menangani state gagal, dan mendokumentasikan asumsi sebelum iterasi berikutnya."],
-  ["04", "Learn in public", "Mencatat keputusan teknis, memperjelas trade-off, lalu menjadikan setiap build sebagai bahan pembelajaran berikutnya."],
+  ["01", "Membingkai sistem", "Memetakan pengguna, batasan, data, dan keputusan yang perlu dibuat oleh aplikasi."],
+  ["02", "Membangun alur", "Menyusun interface, API, dan struktur aplikasi sebagai satu alur yang saling mendukung."],
+  ["03", "Memvalidasi perilaku", "Menguji alur penting, menangani failure state, dan mencatat asumsi sebelum iterasi berikutnya."],
+  ["04", "Mendokumentasikan pembelajaran", "Mencatat keputusan teknis dan trade-off agar setiap build memperjelas langkah engineering berikutnya."],
 ];
 
 const roadmap = [
   {
-    state: "Now",
-    title: "Full-Stack foundations",
+    state: "Sekarang",
+    title: "Fondasi Full-Stack",
     copy: "Memperkuat pola aplikasi web modern: komponen UI, TypeScript, kontrak API, struktur data, dan pengalaman pengguna yang aksesibel.",
     tone: "active",
   },
   {
-    state: "Next build",
-    title: "Knowledge assistant with RAG",
+    state: "Build berikutnya",
+    title: "Knowledge assistant dengan RAG",
     copy: "Membangun aplikasi retrieval-augmented generation dengan sumber jawaban yang jelas, batas confidence, dan pengalaman pencarian yang rapi.",
     tone: "planned",
   },
   {
-    state: "Deepen",
-    title: "Evaluation-driven AI workflow",
+    state: "Pendalaman",
+    title: "Workflow AI berbasis evaluation",
     copy: "Mendokumentasikan test set, structured output, evaluasi kualitas, serta penanganan error untuk melihat AI sebagai sistem, bukan sekadar demo.",
     tone: "planned",
   },
@@ -125,14 +125,14 @@ export default function Home() {
           {navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
         </nav>
 
-        <a className="header-contact" href="#contact">Open to roles <ArrowUpRight size={15} /></a>
+        <a className="header-contact" href="#contact">Terbuka untuk peran <ArrowUpRight size={15} /></a>
         <button className="menu-toggle" type="button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-label={menuOpen ? "Tutup menu" : "Buka menu"}>
           {menuOpen ? <X size={22} /> : <Menu size={23} />}
         </button>
       </header>
 
       <div className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
-        <span className="mobile-menu-label">Navigate</span>
+        <span className="mobile-menu-label">Navigasi</span>
         {navigation.map((item, index) => (
           <a key={item.href} href={item.href} onClick={closeMenu}>
             <span>0{index + 1}</span>{item.label}<ArrowDownRight size={23} />
@@ -148,15 +148,15 @@ export default function Home() {
           <div className="hero-copy reveal-one">
             <div className="eyebrow"><span /> Information Systems Graduate · Indonesia</div>
             <p className="hero-kicker">Positioning file / Junior Full-Stack Engineer</p>
-            <h1 id="hero-title">Building digital systems with a <em>clear path</em> toward AI.</h1>
+            <h1 id="hero-title">Membangun sistem digital dengan arah <em>yang jelas</em> menuju AI.</h1>
             <p className="hero-summary">Fokus saya adalah membangun aplikasi web yang terstruktur dari interface hingga fondasinya. Di saat yang sama, saya sedang memperluas praktik ke AI Engineering melalui output terstruktur, evaluasi, dan reliability sebagai bagian dari sistem.</p>
             <div className="hero-actions">
-              <a className="button button-light" href="#focus">Explore my focus <ArrowRight size={17} /></a>
-              <a className="inline-link" href="#roadmap">See the roadmap <ArrowDownRight size={17} /></a>
+              <a className="button button-light" href="#focus">Lihat fokus teknis <ArrowRight size={17} /></a>
+              <a className="inline-link" href="#roadmap">Lihat roadmap <ArrowDownRight size={17} /></a>
             </div>
             <div className="signal-row" aria-label="Arah kompetensi teknis">
-              <span><Braces size={15} /> Full-stack foundations</span>
-              <span><Network size={15} /> AI systems in progress</span>
+              <span><Braces size={15} /> Fondasi Full-Stack</span>
+              <span><Network size={15} /> Sistem AI dalam pengembangan</span>
             </div>
           </div>
 
@@ -168,28 +168,28 @@ export default function Home() {
               <div className="portrait-label"><span>Malika Fanyzar Azzahra</span><small>Full-Stack → AI Engineering</small></div>
             </div>
             <div className="system-card">
-              <div className="system-card-head"><TerminalSquare size={15} /><span>Engineering snapshot</span></div>
-              <div className="system-card-line"><small>BUILD SCOPE</small><strong>Web interfaces + application logic</strong></div>
-              <div className="system-card-line"><small>AI PRACTICE</small><strong>Structured outputs + evaluation mindset</strong></div>
-              <div className="system-card-line"><small>WORKING STYLE</small><strong>Documented decisions, steady iteration</strong></div>
+              <div className="system-card-head"><TerminalSquare size={15} /><span>Snapshot engineering</span></div>
+              <div className="system-card-line"><small>CAKUPAN BUILD</small><strong>Web interface + application logic</strong></div>
+              <div className="system-card-line"><small>PRAKTIK AI</small><strong>Structured output + evaluation mindset</strong></div>
+              <div className="system-card-line"><small>GAYA KERJA</small><strong>Keputusan tercatat, iterasi bertahap</strong></div>
             </div>
           </div>
 
           <div className="hero-footnote reveal-three">
-            <span>Seeking opportunities to learn, ship, and grow with an engineering team.</span>
-            <strong>FULL-STACK ENGINEERING · AI SYSTEMS</strong>
+            <span>Mencari kesempatan untuk belajar, melakukan delivery, dan tumbuh bersama tim engineering.</span>
+            <strong>FULL-STACK ENGINEERING · SISTEM AI</strong>
           </div>
         </section>
 
         <section id="focus" className="focus-section" aria-labelledby="focus-title">
           <div className="section-wrap">
             <div className="section-heading">
-              <SectionMarker number="02">Engineering focus</SectionMarker>
+              <div className="marker-stack"><SectionMarker number="02">Fokus engineering</SectionMarker><span className="dossier-stamp">MA // FOCUS FILE</span></div>
               <div>
-                <p className="overline">Where I am building depth</p>
-                <h2 id="focus-title">A full-stack mindset, <em>designed</em> for what comes next.</h2>
+                <p className="overline">Kedalaman yang sedang dibangun</p>
+                <h2 id="focus-title">Mindset Full-Stack, <em>dirancang</em> untuk langkah berikutnya.</h2>
               </div>
-              <p className="heading-note">A good engineering portfolio should show more than tools. It should make the builder’s systems thinking visible.</p>
+              <p className="heading-note">Portfolio engineering tidak hanya menampilkan tools. Ia perlu memperlihatkan scope, keputusan sistem, dan bukti build yang bisa ditinjau.</p>
             </div>
 
             <div className="focus-grid">
@@ -201,15 +201,16 @@ export default function Home() {
                     <h3>{area.title}</h3>
                     <p>{area.copy}</p>
                     <div className="tag-list">{area.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                    <div className="focus-card-state"><span>Repository</span><b>Pending project release</b></div>
                   </article>
                 );
               })}
             </div>
 
             <div className="focus-evidence" aria-label="Catatan bukti engineering">
-              <div><span>BUILD NOTE / 01</span><strong>Scope before tools</strong><p>Memilih implementasi setelah alur pengguna, batasan, dan keputusan sistem dipetakan.</p></div>
-              <div><span>BUILD NOTE / 02</span><strong>Evidence after build</strong><p>Setiap project berikutnya akan memuat repository, demo, dan catatan keputusan yang dapat ditinjau.</p></div>
-              <div><span>BUILD NOTE / 03</span><strong>AI needs evaluation</strong><p>Integrasi model perlu diuji dengan data, metrik, dan failure case—bukan hanya disaksikan saat berhasil.</p></div>
+              <div><span>BUILD NOTE / 01</span><strong>Scope sebelum tools</strong><p>Implementasi dipilih setelah alur pengguna, batasan, dan keputusan sistem dipetakan.</p></div>
+              <div><span>BUILD NOTE / 02</span><strong>Bukti setelah build</strong><p>Setiap project berikutnya akan memuat repository, demo, dan catatan keputusan yang dapat ditinjau.</p></div>
+              <div><span>BUILD NOTE / 03</span><strong>AI perlu evaluation</strong><p>Integrasi model perlu diuji dengan data, metrik, dan failure case—bukan hanya disaksikan saat berhasil.</p></div>
             </div>
 
             <div className="focus-note"><ShieldCheck size={18} /><p><strong>Honest positioning.</strong> Area di atas menunjukkan fokus kompetensi dan arah build saya. Project case study, repository, dan demo akan ditambahkan sebagai bukti kerja ketika siap dipublikasikan.</p></div>
@@ -219,9 +220,9 @@ export default function Home() {
         <section id="approach" className="approach-section" aria-labelledby="approach-title">
           <div className="section-wrap approach-layout">
             <div className="approach-intro">
-              <SectionMarker number="03">Approach</SectionMarker>
-              <h2 id="approach-title">Systems that can be <em>explained.</em></h2>
-              <p>Saya tertarik pada engineering yang membuat keputusan terlihat: mengapa struktur dipilih, apa yang diuji, dan bagaimana sistem tetap berguna ketika tidak berjalan sempurna.</p>
+              <div className="marker-stack"><SectionMarker number="03">Pendekatan</SectionMarker><span className="dossier-stamp">MA // DECISION LOG</span></div>
+              <h2 id="approach-title">Sistem yang dapat <em>dijelaskan.</em></h2>
+              <p>Saya tertarik pada engineering yang membuat keputusan terlihat: mengapa struktur dipilih, alur apa yang diuji, dan bagaimana sistem merespons ketika state tidak berjalan sempurna.</p>
               <div className="approach-mark"><Mark /><span>Clarity is part of the implementation.</span></div>
             </div>
             <ol className="workflow-list">
@@ -239,10 +240,10 @@ export default function Home() {
         <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title">
           <div className="section-wrap">
             <div className="roadmap-heading">
-              <SectionMarker number="04">AI Engineering roadmap</SectionMarker>
+              <div className="marker-stack"><SectionMarker number="04">Roadmap AI Engineering</SectionMarker><span className="dossier-stamp">MA // ROADMAP FILE</span></div>
               <div>
-                <p className="overline">A deliberate transition</p>
-                <h2 id="roadmap-title">From building applications to building <em>AI-aware</em> systems.</h2>
+                <p className="overline">Transisi yang terukur</p>
+                <h2 id="roadmap-title">Dari aplikasi menuju sistem yang <em>AI-aware.</em></h2>
               </div>
             </div>
 
@@ -252,14 +253,14 @@ export default function Home() {
                   <div className="roadmap-card-head"><span>{String(index + 1).padStart(2, "0")}</span><small>{item.state}</small></div>
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
-                  <div className="roadmap-line"><i /><span>{item.tone === "active" ? "In development" : "Planned project"}</span></div>
+                  <div className="roadmap-line"><i /><span>{item.tone === "active" ? "Sedang dibangun" : "Project terencana"}</span></div>
                 </article>
               ))}
             </div>
 
             <div className="research-strip">
-              <div><Layers3 size={21} /><span>Portfolio principle</span></div>
-              <p>Untuk proyek AI, saya memprioritaskan kualitas retrieval, structured output, evaluasi, dan deployment—bukan hanya tampilan demo yang menarik.</p>
+              <div><Layers3 size={21} /><span>Prinsip portfolio</span></div>
+              <p>Untuk proyek AI, prioritasnya adalah kualitas retrieval, structured output, evaluation, deployment, dan failure case—bukan hanya tampilan demo yang menarik.</p>
             </div>
           </div>
         </section>
@@ -267,15 +268,15 @@ export default function Home() {
         <section className="proof-section" aria-labelledby="proof-title">
           <div className="section-wrap proof-layout">
             <div className="proof-copy">
-              <SectionMarker number="05">Portfolio in progress</SectionMarker>
-              <h2 id="proof-title">The next proof belongs in the <em>build.</em></h2>
-              <p>Website ini adalah baseline portfolio engineering. Tahap berikutnya adalah menambahkan case study aplikasi full-stack, repository publik, diagram arsitektur, dan demo yang dapat diuji langsung.</p>
+              <div className="marker-stack"><SectionMarker number="05">Bukti portfolio</SectionMarker><span className="dossier-stamp">MA // EVIDENCE REGISTER</span></div>
+              <h2 id="proof-title">Bukti berikutnya lahir dari <em>build.</em></h2>
+              <p>Website ini adalah baseline portfolio engineering. Tahap berikutnya adalah menambahkan case study aplikasi Full-Stack, repository publik, catatan arsitektur, status deployment, dan demo yang dapat diuji langsung.</p>
             </div>
             <div className="proof-list">
-              <div><Check size={18} /><span>Live application case studies</span></div>
-              <div><Check size={18} /><span>Architecture and API decision notes</span></div>
-              <div><Check size={18} /><span>AI project with evaluation evidence</span></div>
-              <div><Check size={18} /><span>GitHub repositories and deployment links</span></div>
+              <div><Check size={18} /><span>Case study aplikasi yang dapat dijalankan</span></div>
+              <div><Check size={18} /><span>Catatan arsitektur dan keputusan API</span></div>
+              <div><Check size={18} /><span>Project AI dengan bukti evaluation</span></div>
+              <div><Check size={18} /><span>Repository GitHub dan tautan deployment</span></div>
             </div>
           </div>
         </section>
@@ -283,14 +284,14 @@ export default function Home() {
         <section id="contact" className="contact-section" aria-labelledby="contact-title">
           <div className="contact-grid-pattern" aria-hidden="true" />
           <div className="section-wrap contact-layout">
-            <div className="contact-mark"><Mark /><span>Open<br />to grow.</span></div>
+            <div className="contact-mark"><Mark /><span>MA //<br />06</span></div>
             <div className="contact-copy">
-              <SectionMarker number="06">Contact</SectionMarker>
-              <h2 id="contact-title">Available for Junior <em>Engineering</em> roles.</h2>
+              <div className="marker-stack"><SectionMarker number="06">Kontak</SectionMarker><span className="dossier-stamp">MA // AVAILABILITY FILE</span></div>
+              <h2 id="contact-title">Tersedia untuk peran <em>Engineering</em> junior.</h2>
               <p>Saya mencari lingkungan engineering untuk berkontribusi pada aplikasi web end-to-end, mendokumentasikan keputusan teknis, dan mengembangkan fondasi AI Engineering secara bertanggung jawab.</p>
               <div className="contact-actions">
                 <a className="button button-light" href="mailto:malikafanyzara34@gmail.com">Email Malika <Mail size={17} /></a>
-                <a className="inline-link light-link" href="https://www.linkedin.com/in/malika-fanyzar-azzahra-49873b292" target="_blank" rel="noreferrer">LinkedIn profile <ArrowUpRight size={17} /></a>
+                <a className="inline-link light-link" href="https://www.linkedin.com/in/malika-fanyzar-azzahra-49873b292" target="_blank" rel="noreferrer">Profil LinkedIn <ArrowUpRight size={17} /></a>
               </div>
             </div>
           </div>
@@ -299,7 +300,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <div><Mark /><span>© 2026 Malika Fanyzar Azzahra</span><span>Indonesia</span></div>
-        <p>MA // Engineering Field Notes</p>
+        <p>MA // Catatan Engineering</p>
         <a href="#top" aria-label="Kembali ke atas"><ArrowUpRight size={19} /></a>
       </footer>
     </div>

@@ -7,3 +7,6 @@
 - [x] Menyusun ulang struktur dan seluruh narasi situs untuk fokus pada karya engineering, kemampuan teknis, dan kesiapan kerja.
 - [x] Mengganti konten serta tampilan yang masih bertema pengaduan atau konsultasi.
 - [x] Memverifikasi tampilan responsif dan pemeriksaan teknis; checkpoint versi baru siap disimpan.
+- [x] Memindahkan panel Engineering Snapshot agar tidak menumpuk dengan portrait dan label hero.
+- [x] Menambahkan animasi micro-interaction yang halus dan mendukung reduced motion.
+- [x] Memverifikasi hero desktop dan mobile serta menjalankan pemeriksaan teknis; checkpoint koreksi siap disimpan.

@@ -25,3 +25,5 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - Acid green menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
 - Monogram, wordmark, dan label `MA // 01` diperlakukan sebagai sistem stempel dossier yang konsisten pada header, portrait, contact, dan footer.
 - Supporting copy harus evidence-led: utamakan scope, decision, trade-off, roadmap, repository, deployment, evaluation, dan planned build daripada motivasi generik.
+- Headline utama, navigasi, dan CTA utama menggunakan Bahasa Indonesia profesional. Istilah English dipertahankan hanya untuk istilah engineering yang lazim, seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation.
+- Setiap section utama membawa perangkat dossier yang terlihat, seperti numbered rail, status stamp `MA //`, metadata scope, atau penanda evidence agar identitas technical file berlanjut di seluruh halaman.
