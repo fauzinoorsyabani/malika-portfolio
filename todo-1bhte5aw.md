@@ -26,3 +26,5 @@
 - [x] Mengembalikan seluruh copy antarmuka portfolio ke Bahasa Indonesia profesional.
 - [x] Menghapus showcase proyek bergaya Mac dan mengembalikan roadmap awal.
 - [x] Memverifikasi Bahasa Indonesia dan roadmap yang dipulihkan pada desktop serta mobile, lalu menjalankan build produksi.
+- [x] Mengecilkan portrait Malika sedikit pada hero desktop dan mobile.
+- [x] Memverifikasi komposisi hero yang diperbarui pada desktop dan mobile; checkpoint siap disimpan.

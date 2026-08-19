@@ -34,3 +34,5 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - The original portrait remains unobscured and unfiltered at the user’s request; surrounding grid and dossier framing provide the visual integration without applying effects to the photograph.
 - Roadmap menampilkan tahapan fokus Full-Stack dan AI Engineering secara jujur sampai case study nyata, repository, dan demo tersedia.
 - A Download CV CTA may use an animated request state until a real CV file or public download URL is provided; it must not imply a file is already downloadable.
+- Portrait Malika tetap natural dan tanpa efek; integrasinya dilakukan melalui frame dossier, grid sekitar, label metadata, dan ruang gelap/terang di sekelilingnya, bukan dengan mengubah foto.
+- Setiap section utama mempertahankan minimal satu sinyal dossier yang terlihat: rail bernomor, stamp `MA //`, metadata monospace, label evidence/status, atau grid teknis tipis.
