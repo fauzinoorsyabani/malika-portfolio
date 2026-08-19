@@ -3,11 +3,15 @@ import {
   ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
+  Bot,
   Braces,
   Check,
   ChevronRight,
   Code2,
   Database,
+  Download,
+  ExternalLink,
+  Github,
   Layers3,
   Mail,
   Menu,
@@ -63,24 +67,39 @@ const workflow = [
   ["04", "Document the learning", "Capture technical decisions and trade-offs so each build clarifies the next engineering step."],
 ];
 
-const roadmap = [
+type ProjectPreviewType = "queue" | "rag" | "triage";
+
+const projects: Array<{
+  number: string;
+  category: string;
+  title: string;
+  description: string;
+  stack: string[];
+  preview: ProjectPreviewType;
+}> = [
   {
-    state: "Now",
-    title: "Full-Stack foundations",
-    copy: "Strengthening modern web application patterns: UI components, TypeScript, API contracts, data structures, and accessible user experiences.",
-    tone: "active",
+    number: "01",
+    category: "FULL-STACK / PLANNED BUILD",
+    title: "TaskPilot — Operations Work Queue",
+    description: "A role-aware work management application with task states, internal notes, API-backed records, and an audit-friendly activity timeline.",
+    stack: ["React", "TypeScript", "REST API", "Database"],
+    preview: "queue",
   },
   {
-    state: "Next build",
-    title: "Knowledge assistant with RAG",
-    copy: "Building a retrieval-augmented generation application with traceable sources, confidence boundaries, and a clear search experience.",
-    tone: "planned",
+    number: "02",
+    category: "AI SYSTEM / PLANNED BUILD",
+    title: "Knowledge Vault — Source-Aware RAG",
+    description: "A document question-answering experience designed around retrieval, cited sources, confidence boundaries, and evaluation-ready test cases.",
+    stack: ["Embeddings", "RAG", "Evaluation", "API"],
+    preview: "rag",
   },
   {
-    state: "Deepen",
-    title: "Evaluation-driven AI workflow",
-    copy: "Documenting test sets, structured outputs, quality evaluation, and error handling so AI is treated as a system, not merely a demo.",
-    tone: "planned",
+    number: "03",
+    category: "AI WORKFLOW / PLANNED BUILD",
+    title: "Briefsmith — Structured AI Workflow",
+    description: "An AI-assisted brief builder that converts raw requests into validated, schema-based outputs with review steps and editable decision fields.",
+    stack: ["LLM API", "Schema", "Guardrails", "UX"],
+    preview: "triage",
   },
 ];
 
@@ -111,8 +130,25 @@ function SectionMarker({ number, children }: { number: string; children: string 
   );
 }
 
+function SearchIcon() {
+  return <span className="search-icon" aria-hidden="true" />;
+}
+
+function ProjectPreview({ type }: { type: ProjectPreviewType }) {
+  if (type === "queue") {
+    return <div className="project-screen queue-preview"><aside><i /><i /><i /><i /></aside><div className="queue-main"><div className="screen-title"><span /><b>Today’s queue</b><small>12 open</small></div><div className="queue-columns"><div><span>IN REVIEW</span><p /><p /></div><div><span>IN PROGRESS</span><p /><p /><p /></div></div></div></div>;
+  }
+
+  if (type === "rag") {
+    return <div className="project-screen rag-preview"><div className="rag-search"><SearchIcon /><span>What changed in the release policy?</span></div><div className="rag-answer"><i /><p /><p /><small><b>3</b> verified sources retrieved</small></div><div className="rag-sources"><span>Source 01</span><span>Source 02</span><span>Source 03</span></div></div>;
+  }
+
+  return <div className="project-screen triage-preview"><div className="triage-head"><b>Brief assistant</b><span>schema valid</span></div><div className="triage-fields"><div><small>OBJECTIVE</small><p /></div><div><small>AUDIENCE</small><p /></div><div><small>DELIVERABLE</small><p /></div></div><div className="triage-footer"><i /><span>Output ready for review</span></div></div>;
+}
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cvNotice, setCvNotice] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
   useEffect(() => {
@@ -140,7 +176,7 @@ export default function Home() {
         <a className="brand" href="#top" aria-label="Back to Malika's home page">
           <span className="brand-mark"><img src={ASSETS.mark} alt="" /><Mark /></span>
           <span className="brand-name">Malika<span>.</span></span>
-          <small><b>MA // 01</b>Engineering Portfolio</small>
+          <small><b>MA // 01</b><span>Engineering<br />Portfolio</span></small>
         </a>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -175,7 +211,9 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button button-light" href="#focus">Explore technical focus <ArrowRight size={17} /></a>
               <a className="inline-link" href="#roadmap">View roadmap <ArrowDownRight size={17} /></a>
+              <button className="button button-cv" type="button" onClick={() => setCvNotice(true)} aria-describedby="cv-note"><span>Download CV</span><Download size={16} /></button>
             </div>
+            <p id="cv-note" className={`cv-note ${cvNotice ? "is-visible" : ""}`}>CV file link will be added here. For now, request it directly by email.</p>
             <div className="signal-row" aria-label="Technical direction">
               <span><Braces size={15} /> Full-Stack foundations</span>
               <span><Network size={15} /> AI systems in progress</span>
@@ -264,30 +302,42 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="roadmap" className="roadmap-section" aria-labelledby="roadmap-title" data-reveal>
+        <section id="roadmap" className="roadmap-section projects-section" aria-labelledby="roadmap-title" data-reveal>
           <div className="section-wrap">
             <div className="roadmap-heading">
-              <div className="marker-stack"><SectionMarker number="04">Roadmap AI Engineering</SectionMarker><span className="dossier-stamp">MA // ROADMAP FILE</span></div>
+              <div className="marker-stack"><SectionMarker number="04">Project concepts</SectionMarker><span className="dossier-stamp">MA // BUILD FILES</span></div>
               <div>
-                <p className="overline">A measured transition</p>
-                <h2 id="roadmap-title">From applications to <em>AI-aware</em> systems.</h2>
+                <p className="overline">Full-Stack and AI build directions</p>
+                <h2 id="roadmap-title">Three project concepts, <em>ready</em> to become evidence.</h2>
               </div>
             </div>
 
-            <div className="roadmap-grid">
-              {roadmap.map((item, index) => (
-                <article className={`roadmap-card ${item.tone}`} key={item.title}>
-                  <div className="roadmap-card-head"><span>{String(index + 1).padStart(2, "0")}</span><small>{item.state}</small></div>
-                  <h3>{item.title}</h3>
-                  <p>{item.copy}</p>
-                  <div className="roadmap-line"><i /><span>{item.tone === "active" ? "In development" : "Planned project"}</span></div>
+            <p className="projects-disclaimer">These are realistic planned-build concepts, not shipped case studies. GitHub repositories and live demos will be attached when the projects are built and published.</p>
+
+            <div className="projects-grid">
+              {projects.map((project) => (
+                <article className="project-card" key={project.number}>
+                  <div className="project-window">
+                    <div className="window-bar"><div className="window-dots"><i /><i /><i /></div><span>malika.dev / builds / {project.number}</span><small>PLANNED</small></div>
+                    <ProjectPreview type={project.preview} />
+                  </div>
+                  <div className="project-card-copy">
+                    <div className="project-meta"><span>{project.number}</span><small>{project.category}</small></div>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className="tag-list">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
+                    <div className="project-actions" aria-label={`${project.title} links pending`}>
+                      <span className="project-action is-pending"><Github size={14} /> GitHub pending</span>
+                      <span className="project-action is-pending"><ExternalLink size={14} /> View demo planned</span>
+                    </div>
+                  </div>
                 </article>
               ))}
             </div>
 
             <div className="research-strip">
-              <div><Layers3 size={21} /><span>Portfolio principle</span></div>
-              <p>For AI builds, the priority is retrieval quality, structured output, evaluation, deployment, and failure cases—not only an attractive demo.</p>
+              <div><Bot size={21} /><span>Build principle</span></div>
+              <p>Each project should surface real evidence: repository history, architecture notes, deployment status, evaluation criteria, and documented failure cases.</p>
             </div>
           </div>
         </section>

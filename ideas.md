@@ -32,3 +32,5 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - Register bukti menggunakan format yang dapat diverifikasi: label case study, decision log, evaluation, dan release disertai status planned atau pending hingga artefak nyata tersedia.
 - All public-facing portfolio copy uses professional English. Names, contact data, and industry-standard technical terms are retained as appropriate.
 - The original portrait remains unobscured and unfiltered at the user’s request; surrounding grid and dossier framing provide the visual integration without applying effects to the photograph.
+- Project showcase cards use Mac-style browser window mockups with three traffic-light dots. They must be labelled as planned concepts until an actual product screenshot, repository, and demo are available.
+- A Download CV CTA may use an animated request state until a real CV file or public download URL is provided; it must not imply a file is already downloadable.

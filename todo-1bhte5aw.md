@@ -19,3 +19,7 @@
 - [x] Menambahkan motion terkoordinasi pada section, kartu, dan register tanpa mengganggu keterbacaan.
 - [x] Memverifikasi motion di desktop dan mobile serta reduced-motion sebelum menyimpan checkpoint.
 - [x] Mengubah seluruh copy portfolio menjadi Bahasa Inggris profesional, kecuali nama dan data identitas yang harus dipertahankan.
+- [x] Membuat dan memvalidasi reusable skill untuk proses redesign portfolio engineering.
+- [x] Menambahkan tombol Download CV dengan hover yang menarik pada hero utama.
+- [x] Mengganti roadmap dengan tiga showcase proyek bergaya layar Mac dan menyiapkan status GitHub/demo tanpa tautan palsu.
+- [x] Memverifikasi showcase pada desktop dan mobile, menjalankan build, dan memvalidasi skill sebelum menyimpan checkpoint.
