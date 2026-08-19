@@ -315,32 +315,52 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
 .site-footer a { display: grid; width: 33px; height: 33px; place-items: center; border: 1px solid var(--line); color: var(--acid); transition: transform 180ms var(--ease-out), background 180ms var(--ease-out); }
 .site-footer a:hover { background: var(--acid); color: var(--ink); transform: translateY(-2px); }
 
-.reveal-one { animation: rise .75s var(--ease-out) both; }
-.reveal-two { animation: rise .8s .1s var(--ease-out) both; }
-.reveal-three { animation: rise .8s .2s var(--ease-out) both; }
-@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+.reveal-one { animation: hero-copy-enter .95s var(--ease-out) both; }
+.reveal-two { animation: hero-visual-enter 1s .12s var(--ease-out) both; }
+.reveal-three { animation: hero-foot-enter .8s .32s var(--ease-out) both; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .marquee-track { animation: marquee-scroll 28s linear infinite; }
+  .marquee-track { animation: marquee-scroll 16s linear infinite; }
   .motion-marquee:hover .marquee-track { animation-play-state: paused; }
-  .portrait-grid { animation: grid-breathe 5.5s ease-in-out infinite; }
-  .portrait-frame { animation: portrait-enter .8s .14s var(--ease-out) both; }
-  [data-reveal] .section-wrap { opacity: 0; transform: translateY(24px); }
-  [data-reveal].is-visible .section-wrap { animation: section-enter .72s var(--ease-out) both; }
-  [data-reveal].is-visible .focus-card, [data-reveal].is-visible .roadmap-card, [data-reveal].is-visible .proof-list div, [data-reveal].is-visible .workflow-list li { animation: item-enter .58s var(--ease-out) both; }
-  [data-reveal].is-visible .focus-card:nth-child(2), [data-reveal].is-visible .roadmap-card:nth-child(2), [data-reveal].is-visible .proof-list div:nth-child(2), [data-reveal].is-visible .workflow-list li:nth-child(2) { animation-delay: .07s; }
-  [data-reveal].is-visible .focus-card:nth-child(3), [data-reveal].is-visible .roadmap-card:nth-child(3), [data-reveal].is-visible .proof-list div:nth-child(3), [data-reveal].is-visible .workflow-list li:nth-child(3) { animation-delay: .14s; }
-  [data-reveal].is-visible .proof-list div:nth-child(4), [data-reveal].is-visible .workflow-list li:nth-child(4) { animation-delay: .21s; }
-  .focus-card, .roadmap-card, .proof-list div { transition: transform 220ms var(--ease-out), background 220ms var(--ease-out), border-color 220ms var(--ease-out); }
-  .focus-card:hover { transform: translateY(-5px); }
-  .roadmap-card:hover { transform: translateY(-5px); border-color: var(--pink-deep); }
-  .proof-list div:hover { transform: translateX(7px); }
+  .hero-section::after { transform-origin: left; animation: line-sweep 1.35s .25s var(--ease-out) both; }
+  .hero-rail i { transform-origin: top; animation: rail-scan 2.8s .45s var(--ease-out) both; }
+  .portrait-grid { animation: grid-drift 6.5s ease-in-out infinite; }
+  .portrait-frame { animation: portrait-enter .9s .24s var(--ease-out) both, portrait-float 5.4s 1.25s ease-in-out infinite; }
+  .portrait-frame::before { animation: frame-pulse 3.8s 1.1s ease-in-out infinite; }
+  .focus-section::before, .roadmap-section::before, .contact-grid-pattern { animation: ambient-drift 8s ease-in-out infinite; }
+  .roadmap-section::before { animation-delay: -2.3s; }
+  .contact-grid-pattern { animation-delay: -4.1s; }
+  .approach-mark .mark { animation: mark-breathe 3.4s ease-in-out infinite; }
+  .roadmap-card::after { animation: orbit-outline 14s linear infinite; }
+  .contact-mark::before { animation: orbit-outline 12s linear infinite; }
+  .contact-mark::after { animation: orbit-outline 8s reverse linear infinite; }
+  [data-reveal] .section-wrap { opacity: 0; transform: translate3d(0, 38px, 0); }
+  [data-reveal].is-visible .section-wrap { animation: section-enter .9s var(--ease-out) both; }
+  [data-reveal].is-visible .focus-card, [data-reveal].is-visible .roadmap-card, [data-reveal].is-visible .proof-list div, [data-reveal].is-visible .workflow-list li, [data-reveal].is-visible .focus-evidence > div { animation: item-enter .78s var(--ease-out) both; }
+  [data-reveal].is-visible .focus-card:nth-child(2), [data-reveal].is-visible .roadmap-card:nth-child(2), [data-reveal].is-visible .proof-list div:nth-child(2), [data-reveal].is-visible .workflow-list li:nth-child(2), [data-reveal].is-visible .focus-evidence > div:nth-child(2) { animation-delay: .12s; }
+  [data-reveal].is-visible .focus-card:nth-child(3), [data-reveal].is-visible .roadmap-card:nth-child(3), [data-reveal].is-visible .proof-list div:nth-child(3), [data-reveal].is-visible .workflow-list li:nth-child(3), [data-reveal].is-visible .focus-evidence > div:nth-child(3) { animation-delay: .24s; }
+  [data-reveal].is-visible .proof-list div:nth-child(4), [data-reveal].is-visible .workflow-list li:nth-child(4) { animation-delay: .36s; }
+  .focus-card, .roadmap-card, .proof-list div, .workflow-list li, .tag-list span { transition: transform 260ms var(--ease-out), background 220ms var(--ease-out), border-color 220ms var(--ease-out), box-shadow 260ms var(--ease-out); }
+  .focus-card:hover, .roadmap-card:hover { transform: translate3d(0, -8px, 0); border-color: var(--pink-deep); box-shadow: 0 12px 24px rgba(86, 46, 68, .12); }
+  .proof-list div:hover { transform: translate3d(10px, 0, 0); }
+  .workflow-list li:hover { transform: translate3d(9px, 0, 0); }
+  .tag-list span:hover { transform: translate3d(0, -3px, 0); border-color: var(--pink-deep); }
 }
-@keyframes portrait-enter { from { opacity: 0; transform: translate3d(18px, 10px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
-@keyframes grid-breathe { 0%, 100% { opacity: .34; } 50% { opacity: .58; } }
+@keyframes hero-copy-enter { from { opacity: 0; transform: translate3d(-30px, 18px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@keyframes hero-visual-enter { from { opacity: 0; transform: translate3d(34px, 24px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@keyframes hero-foot-enter { from { opacity: 0; transform: translate3d(0, 18px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@keyframes portrait-enter { from { opacity: 0; transform: translate3d(26px, 18px, 0) scale(.97); } to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); } }
+@keyframes portrait-float { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -9px, 0); } }
+@keyframes grid-drift { 0%, 100% { opacity: .3; transform: translate3d(0, 0, 0); } 50% { opacity: .73; transform: translate3d(-12px, 9px, 0); } }
+@keyframes frame-pulse { 0%, 100% { opacity: .25; transform: scale(1); } 50% { opacity: .74; transform: scale(.982); } }
 @keyframes marquee-scroll { from { transform: translate3d(0, 0, 0); } to { transform: translate3d(-50%, 0, 0); } }
-@keyframes section-enter { from { opacity: 0; transform: translate3d(0, 24px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
-@keyframes item-enter { from { opacity: 0; transform: translate3d(0, 14px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@keyframes line-sweep { from { transform: scaleX(0); opacity: 0; } to { transform: scaleX(1); opacity: 1; } }
+@keyframes rail-scan { 0% { opacity: 0; transform: scaleY(.08); } 55% { opacity: .95; transform: scaleY(1); } 100% { opacity: .5; transform: scaleY(1); } }
+@keyframes section-enter { from { opacity: 0; transform: translate3d(0, 38px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+@keyframes item-enter { from { opacity: 0; transform: translate3d(0, 28px, 0) scale(.985); } to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); } }
+@keyframes ambient-drift { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(16px, -13px, 0); } }
+@keyframes orbit-outline { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes mark-breathe { 0%, 100% { transform: translate3d(0, 0, 0) scale(1); } 50% { transform: translate3d(5px, -4px, 0) scale(1.05); } }
 
 @media (max-width: 980px) {
   .site-header { grid-template-columns: 1fr auto; }

@@ -33,3 +33,7 @@
 - [x] Memverifikasi struktur konten baru pada desktop dan mobile serta menjalankan build produksi sebelum menyimpan checkpoint.
 - [x] Mengubah seluruh copy public-facing portfolio ke Bahasa Inggris profesional.
 - [x] Memverifikasi copy Inggris, layout responsif, dan build produksi sebelum menyimpan checkpoint.
+- [x] Menguatkan entrance animation pada hero, section, kartu, dan register agar terlihat jelas saat halaman digunakan.
+- [x] Menambahkan motion berkelanjutan yang ringan pada elemen visual utama dan marquee kanan-ke-kiri.
+- [x] Memverifikasi animasi pada desktop, mobile, dan reduced-motion sebelum menyimpan checkpoint.
+- [ ] Memastikan repository GitHub privat tersedia dan mendorong source code portfolio terbaru.
