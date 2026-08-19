@@ -1,81 +1,27 @@
-# Arah Desain — Portofolio Malika
+# Arah Desain — Portfolio Engineering Malika
 
-## Tiga pendekatan yang dipertimbangkan
+## Arah terpilih: Engineering Field Notes
 
-### 1. Soft Systems Editorial
-**Very Brief Intro:** Portofolio terasa seperti editorial digital yang tenang dan cerdas: ruang putih hangat, tipografi serif yang ekspresif, serta struktur informasi yang rapi namun tidak kaku. Arah ini menonjolkan kemampuan Malika menerjemahkan kerumitan sistem menjadi kejelasan.
+Portfolio ini diarahkan sebagai **technical dossier** yang personal, tenang, dan siap untuk konteks rekrutmen. Visualnya memadukan panel gelap seperti lingkungan pengembangan, grid teknis yang halus, serta aksen acid green dan cyan yang dipakai terbatas untuk sinyal status, fokus, dan interaksi. Gaya ini meninggalkan narasi pengaduan maupun konsultasi dan menempatkan Malika sebagai kandidat **Full-Stack Engineer yang membangun fondasi menuju AI Engineering**.
 
-**Probability:** 0.07
+## Prinsip konten
 
-### 2. Field Notes Modernism
-**Very Brief Intro:** Gaya seperti jurnal riset kontemporer, dengan anotasi kecil, garis teknis, dokumentasi proses, dan komposisi modular yang lebih analitis. Nuansanya jujur, observasional, dan cocok untuk memperlihatkan pemikiran sistem.
+Konten harus memprioritaskan bukti engineering: peran target, pendekatan kerja, fokus teknis, project case study, keputusan arsitektur, repository, dan deployment. Ketika bukti proyek belum tersedia, gunakan bahasa yang jujur seperti **focus area**, **planned build**, atau **roadmap**; jangan menciptakan pengalaman, teknologi, angka dampak, atau hasil kerja yang belum terverifikasi.
 
-**Probability:** 0.04
+## Prinsip visual
 
-### 3. Warm Gallery Portfolio
-**Very Brief Intro:** Gaya galeri kreatif yang menggabungkan warna material hangat, framing gambar yang artistik, dan presentasi proyek yang sinematik. Arah ini lebih emosional dan personal, tetapi tetap profesional.
+Gunakan komposisi asimetris dengan rail bernomor, grid tipis, metadata monospace, dan tipografi Space Grotesk yang tegas. Portrait asli Malika tetap menjadi elemen personal yang utama, tetapi ditempatkan dalam frame teknis dengan anotasi engineering. Hindari neon berlebihan, kartu seragam, dan visual AI generik seperti otak bercahaya atau robot humanoid.
 
-**Probability:** 0.09
+## Arsitektur informasi
 
-## Pendekatan terpilih: Soft Systems Editorial
-
-### Design Movement
-**New editorial minimalism** dengan sentuhan **contemporary Japanese print design**: komposisi terukur, material yang hangat, tipografi sebagai elemen visual utama, dan detail informasi yang presisi.
-
-### Core Principles
-1. **Clarity is the ornament.** Struktur, ritme, dan hierarchy menjadi dekorasi utama; tidak ada elemen yang hadir tanpa fungsi.
-2. **Warm intelligence.** Desain akademis dan teknis diterjemahkan menjadi pengalaman yang ramah, elegan, dan personal.
-3. **Asymmetric calm.** Layout tidak selalu simetris atau berpusat, tetapi setiap ketidakseimbangan terasa sengaja dan stabil.
-4. **Evidence with grace.** Angka, metode, dan outcome ditampilkan sebagai bukti yang mudah dicerna, bukan sebagai laporan yang kaku.
-
-### Color Philosophy
-Latar **warm ivory** menciptakan rasa hangat seperti kertas arsip berkualitas. **Deep ink** memberi wibawa dan keterbacaan. **Mulberry plum** menjadi tanda tangan Malika: feminin tetapi tidak manis, dewasa dan berkarakter. **Apricot wash** dipakai kecil untuk memberi rasa manusiawi, sedangkan **soft sage** hanya untuk kode status atau penekanan proses.
-
-### Layout Paradigm
-Gunakan sistem **editorial rails**: satu rail sempit untuk nomor section, kategori, atau anotasi; satu rail fleksibel untuk cerita utama; dan area visual yang boleh keluar dari kolom untuk menandai momen penting. Hindari layout kartu seragam dan hero yang seluruh isi dipusatkan.
-
-### Signature Elements
-1. **Numbered margins** seperti 01, 02, 03 pada awal section dan case-study steps.
-2. **Offset frames** dengan border tipis dan bayangan lembut pada karya visual atau photo treatment.
-3. **Micro-notes** seperti label “CASE STUDY / 2026” dan “SYSTEMS THINKING” sebagai lapisan informasi.
-
-### Interaction Philosophy
-Interaksi harus terasa seperti membuka halaman majalah: link memiliki underline yang bergerak halus, gambar bergeser beberapa piksel saat hover, dan navigasi memandu tanpa mengalihkan perhatian. Semua kontrol harus tetap sederhana, jelas, dan dapat diakses keyboard.
-
-### Animation
-Gunakan reveal ringan berbasis opacity dan translateY kurang dari 16px dengan easing `cubic-bezier(0.23, 1, 0.32, 1)`. Stagger maksimal 60ms untuk kelompok kecil. Link dan tombol memakai transisi 160–220ms serta active-scale ringan. Hormati `prefers-reduced-motion` dan jangan memakai parallax, loading animation panjang, atau efek neon.
-
-### Typography System
-Heading memakai **DM Serif Display**: besar, percaya diri, dengan detail italic terbatas untuk penekanan. Body, metadata, dan interface memakai **Manrope**: bersih, terbaca, dan modern. Heading utama memakai bobot regular agar terasa editorial; metadata memakai uppercase dengan tracking lebar. Hindari Inter sebagai font dominan.
-
-### Brand Essence
-**Portofolio Malika adalah ruang untuk melihat bagaimana kebutuhan pengguna dan proses yang kompleks diterjemahkan menjadi solusi digital yang lebih jelas.**
-
-Kepribadian: **thoughtful, precise, warm**.
-
-### Brand Voice
-Headline harus singkat, reflektif, dan yakin. CTA harus mengundang, bukan memaksa. Microcopy harus informatif dan manusiawi.
-
-Contoh: “A clearer path through complex systems.”
-
-Contoh: “Punya masalah yang perlu dirapikan? Mari bicara.”
-
-Hindari filler seperti “Welcome to my website” atau “Get started today.”
-
-### Wordmark & Logo
-Gunakan monogram **M·A** sebagai tanda visual: dua garis melengkung yang bertemu dalam bentuk simpul terstruktur, seperti alur sistem yang menemukan titik kejelasan. Wordmark “Malika.” memakai serif display dengan titik mulberry sebagai detail brand.
-
-### Signature Brand Color
-**Mulberry Ink — #6B3D58.** Warna ini harus konsisten pada CTA primer, titik wordmark, indikator aktif, dan detail grafis kecil.
+Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan kerja, roadmap AI Engineering, bukti portfolio yang akan ditambahkan, dan kontak. Case study di masa depan perlu memuat problem, peran, stack, arsitektur, trade-off, demo, repository, dan hasil pengujian.
 
 ## Style Decisions
 
-- Hero menggunakan bentuk abstrak/visual editorial yang low-key dan bertekstur, dengan ruang kosong aman untuk copy gelap.
-- Foto portrait asli Malika akan menjadi pengganti visual abstrak ketika aset tersedia; jangan gunakan wajah orang lain sebagai substitusi.
-- LaporinAja dipresentasikan sebagai studi kasus unggulan dengan artefak proses, alur tiga peran, dan bukti 27 skenario fungsional yang valid.
-- Placeholder asset harus jelas, elegan, dan mudah diganti; tidak ada lorem ipsum atau testimoni buatan.
-- Identitas Malika harus selalu terbaca sebagai monogram simpul **M·A** yang terstruktur, bukan simbol dekoratif generik; logika mark yang sama dipakai pada header, emblem kontak, dan footer.
-- Visual abstrak utama harus menyertakan petunjuk bukti sistem yang nyata, seperti anotasi, flow line, node peran, atau fragmen proses, agar atmosfer visual selalu terkait dengan pekerjaan analitis Malika.
-- Italic serif adalah aksen editorial yang langka: maksimum satu kata atau frasa penting per pesan utama dan tidak digunakan sebagai kebiasaan dekoratif.
-- Portrait Malika diperlakukan sebagai artefak editorial dengan tone material yang hangat, anotasi dan bukti proses, bukan sebagai foto identitas yang ditempelkan mentah.
-- Voice utama menggunakan Bahasa Indonesia yang hangat dan presisi; istilah Bahasa Inggris hanya dipertahankan untuk discipline label profesional yang umum digunakan.
+- Bahasa utama tetap Indonesia yang profesional, dengan istilah engineering Bahasa Inggris yang lazim untuk kebutuhan rekrutmen.
+- CTA mengarah ke eksplorasi portfolio dan kontak terkait peluang kerja, bukan jasa konsultasi.
+- AI diposisikan sebagai jalur pengembangan yang terukur: retrieval, structured output, evaluation, reliability, dan deployment lebih penting daripada klaim agent atau chatbot semata.
+- Setelah data tersedia, bagian roadmap harus diprioritaskan untuk diganti menjadi case study nyata dan tautan GitHub atau demo.
+- Acid green menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
+- Monogram, wordmark, dan label `MA // 01` diperlakukan sebagai sistem stempel dossier yang konsisten pada header, portrait, contact, dan footer.
+- Supporting copy harus evidence-led: utamakan scope, decision, trade-off, roadmap, repository, deployment, evaluation, dan planned build daripada motivasi generik.
