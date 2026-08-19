@@ -19,10 +19,10 @@
   --foreground: #edf3f1;
   --card: #111a22;
   --card-foreground: #edf3f1;
-  --primary: #bdfc63;
+  --primary: #f1a0c5;
   --primary-foreground: #08100d;
   --border: rgba(229, 239, 237, .16);
-  --ring: #bdfc63;
+  --ring: #f1a0c5;
   --ink: #081015;
   --ink-soft: #101922;
   --night: #0a1016;
@@ -31,7 +31,9 @@
   --paper-deep: #dfe4de;
   --muted: #9cadab;
   --line: rgba(209, 226, 220, .18);
-  --acid: #bdfc63;
+  --acid: #f1a0c5;
+  --pink-deep: #bd5f8f;
+  --pink-bright: #ffc0db;
   --cyan: #6ce0d0;
   --apricot: #f3ab83;
   --red: #f48b88;
@@ -64,7 +66,8 @@
 .mark { fill: none; stroke: currentColor; stroke-width: 4.8; stroke-linecap: round; stroke-linejoin: round; }
 .mark circle { fill: var(--acid); stroke: currentColor; stroke-width: 2.5; }
 .brand-mark .mark { width: 26px; color: var(--acid); }
-.brand-name { font-family: var(--display); font-size: 24px; font-weight: 650; letter-spacing: -.065em; }
+.brand-name { position: relative; padding-right: 7px; font-family: var(--display); font-size: 24px; font-weight: 650; letter-spacing: -.065em; }
+.brand-name::after { content: ""; position: absolute; right: 0; bottom: 2px; width: 3px; height: 3px; background: var(--acid); }
 .brand-name span { color: var(--acid); }
 .brand small { display: grid; gap: 2px; margin-left: 4px; padding-left: 12px; border-left: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 8px; font-weight: 500; letter-spacing: .08em; line-height: 1.15; text-transform: uppercase; }
 .brand small b { color: var(--acid); font-size: 7px; font-weight: 500; letter-spacing: .13em; }
@@ -96,7 +99,7 @@ h1 em, h2 em { color: var(--acid); font-style: normal; }
 .button { display: inline-flex; width: fit-content; align-items: center; justify-content: center; gap: 10px; padding: 14px 17px; border: 1px solid transparent; border-radius: 2px; font-size: 12px; font-weight: 700; transition: transform 160ms var(--ease-out), background 180ms var(--ease-out), color 180ms var(--ease-out); }
 .button:active, .header-contact:active { transform: scale(.97); }
 .button-light { background: var(--acid); color: var(--ink); }
-.button-light:hover { background: #d5ff91; transform: translateY(-2px); }
+.button-light:hover { background: var(--pink-bright); transform: translateY(-2px); }
 .inline-link { position: relative; display: inline-flex; align-items: center; gap: 8px; padding-bottom: 4px; color: #e2ece8; font-size: 12px; font-weight: 700; }
 .signal-row { display: flex; flex-wrap: wrap; gap: 10px 23px; margin-top: 42px; padding-top: 17px; border-top: 1px solid var(--line); color: #9eb0ac; font-family: var(--mono); font-size: 9px; letter-spacing: .04em; text-transform: uppercase; }
 .signal-row span { display: inline-flex; align-items: center; gap: 7px; }
@@ -106,10 +109,11 @@ h1 em, h2 em { color: var(--acid); font-style: normal; }
 .portrait-grid { position: absolute; top: -21px; right: -22px; bottom: 92px; left: 29px; opacity: .46; background-image: linear-gradient(rgba(126, 169, 160, .19) 1px, transparent 1px), linear-gradient(90deg, rgba(126, 169, 160, .19) 1px, transparent 1px); background-size: 18px 18px; }
 .portrait-frame { position: absolute; z-index: 1; top: 0; right: 22px; bottom: 110px; left: 0; overflow: hidden; border: 1px solid rgba(189,252,99,.45); background: #243848; }
 .portrait-frame::before { content: ""; position: absolute; z-index: 2; inset: 10px; border: 1px solid rgba(240,242,237,.3); pointer-events: none; }
-.portrait-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; filter: saturate(.72) contrast(1.08) brightness(.92); transition: transform 600ms var(--ease-out), filter 600ms var(--ease-out); }
-.portrait-frame:hover img { transform: scale(1.035); filter: saturate(.82) contrast(1.05); }
-.portrait-overlay { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(4,11,17,.03) 42%, rgba(7,14,20,.78) 100%); mix-blend-mode: multiply; }
-.portrait-label { position: absolute; z-index: 3; right: 18px; bottom: 18px; left: 18px; display: grid; gap: 5px; padding: 11px 12px; border-top: 1px solid var(--acid); background: rgba(7,14,20,.83); backdrop-filter: blur(6px); }
+.portrait-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; filter: saturate(.38) contrast(1.1) brightness(.86); transition: transform 600ms var(--ease-out), filter 600ms var(--ease-out); }
+.portrait-frame:hover img { transform: scale(1.035); filter: saturate(.48) contrast(1.07) brightness(.9); }
+.portrait-overlay { position: absolute; z-index: 1; inset: 0; background: linear-gradient(165deg, rgba(190,72,128,.36), rgba(7,14,20,.08) 45%, rgba(7,14,20,.86) 100%); mix-blend-mode: multiply; }
+.portrait-label { position: absolute; z-index: 3; right: 18px; bottom: 18px; left: 18px; display: grid; gap: 5px; padding: 10px 12px 11px; border-top: 1px solid var(--acid); background: rgba(7,14,20,.88); backdrop-filter: blur(6px); }
+.portrait-label b { color: var(--acid); font-family: var(--mono); font-size: 7px; font-weight: 500; letter-spacing: .11em; }
 .portrait-label span { color: white; font-family: var(--display); font-size: 17px; font-weight: 540; letter-spacing: -.04em; }
 .portrait-label small { color: var(--acid); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
 .system-card { position: absolute; z-index: 4; right: 0; bottom: 0; width: min(316px, 88%); padding: 13px 14px; border: 1px solid rgba(240,242,237,.28); background: rgba(15,25,33,.97); box-shadow: 12px 13px 0 rgba(189,252,99,.13); transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out); }
@@ -177,7 +181,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
 .roadmap-heading { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 38px; align-items: start; }
 .roadmap-section .dossier-stamp { color: #52736d; }
 .roadmap-heading h2 { max-width: 800px; }
-.roadmap-heading h2 em { color: #266b62; }
+.roadmap-heading h2 em { color: #a14974; }
 .roadmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin-top: 62px; }
 .roadmap-card { min-height: 310px; position: relative; overflow: hidden; padding: 22px; border: 1px solid rgba(8,16,21,.2); background: rgba(247,249,244,.46); }
 .roadmap-card.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -204,8 +208,11 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
 .proof-copy h2 em { color: var(--acid); }
 .proof-copy > p { max-width: 570px; margin: 0; color: #a3b4b0; font-size: 15px; line-height: 1.78; }
 .proof-list { border-top: 1px solid var(--line); }
-.proof-list div { display: flex; align-items: center; gap: 12px; min-height: 61px; padding: 12px 0; border-bottom: 1px solid var(--line); color: #e3ece9; font-family: var(--mono); font-size: 10px; letter-spacing: .035em; }
+.proof-list div { display: grid; grid-template-columns: 20px minmax(0, 1fr) auto; align-items: center; gap: 10px; min-height: 66px; padding: 10px 0; border-bottom: 1px solid var(--line); color: #e3ece9; font-family: var(--mono); font-size: 10px; letter-spacing: .035em; }
 .proof-list svg { color: var(--acid); }
+.proof-list span { display: grid; gap: 3px; }
+.proof-list span small { color: var(--cyan); font-size: 7px; letter-spacing: .09em; }
+.proof-list b { padding: 4px 5px; border: 1px solid rgba(241,160,197,.5); color: var(--acid); font-size: 7px; font-weight: 500; letter-spacing: .07em; }
 
 .contact-section { position: relative; overflow: hidden; padding: clamp(88px, 10vw, 145px) var(--page-gutter); background: #e5ebe5; color: var(--ink); }
 .contact-section::before { content: ""; position: absolute; top: 0; right: max(var(--page-gutter), calc((100vw - 1290px) / 2)); width: 150px; height: 11px; background: var(--cyan); }
@@ -221,7 +228,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
 .contact-section .section-marker { color: #2c7067; }
 .contact-section .dossier-stamp { color: #3d7971; }
 .contact-copy h2 { max-width: 690px; margin: 27px 0 25px; }
-.contact-copy h2 em { color: #2c7067; }
+.contact-copy h2 em { color: #a14974; }
 .contact-copy > p { max-width: 605px; margin: 0; color: #384945; font-size: 15px; line-height: 1.78; }
 .contact-actions .button-light { background: var(--ink); color: var(--acid); }
 .contact-actions .button-light:hover { background: #17262d; }
@@ -229,6 +236,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
 
 .site-footer { min-height: 88px; padding: 18px var(--page-gutter); display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 28px; background: #060b0f; color: #a8b7b4; font-family: var(--mono); font-size: 9px; letter-spacing: .05em; }
 .site-footer div { display: flex; align-items: center; gap: 12px; }
+.site-footer div > span:nth-child(2) { color: var(--acid); font-size: 8px; }
 .site-footer .mark { width: 25px; color: var(--acid); }
 .site-footer p { margin: 0; color: #71847f; text-transform: uppercase; }
 .site-footer a { display: grid; width: 33px; height: 33px; place-items: center; border: 1px solid var(--line); color: var(--acid); transition: transform 180ms var(--ease-out), background 180ms var(--ease-out); }
@@ -249,7 +257,7 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
   .system-card-line:nth-child(4) { animation-delay: .85s; }
   .focus-card, .roadmap-card, .proof-list div { transition: transform 220ms var(--ease-out), background 220ms var(--ease-out), border-color 220ms var(--ease-out); }
   .focus-card:hover { transform: translateY(-5px); }
-  .roadmap-card:hover { transform: translateY(-5px); border-color: #4f8b80; }
+.roadmap-card:hover { transform: translateY(-5px); border-color: var(--pink-deep); }
   .proof-list div:hover { transform: translateX(7px); }
 }
 @keyframes portrait-enter { from { opacity: 0; transform: translate3d(18px, 10px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
@@ -319,6 +327,8 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
   .roadmap-card h3 { margin-top: 48px; }
   .research-strip { grid-template-columns: 1fr; gap: 12px; }
   .proof-list { margin-top: -15px; }
+  .proof-list div { grid-template-columns: 18px minmax(0, 1fr); }
+  .proof-list b { display: none; }
   .contact-mark { min-height: 235px; max-width: 310px; }
   .contact-mark span { right: 5%; bottom: 15%; }
   .site-footer { grid-template-columns: 1fr auto; gap: 15px; }

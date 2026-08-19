@@ -86,6 +86,13 @@ const roadmap = [
   },
 ];
 
+const proofRecords = [
+  ["CASE STUDY", "Case study aplikasi yang dapat dijalankan", "PLANNED"],
+  ["DECISION LOG", "Catatan arsitektur dan keputusan API", "PLANNED"],
+  ["EVALUATION", "Project AI dengan bukti evaluation", "PLANNED"],
+  ["RELEASE", "Repository GitHub dan tautan deployment", "PENDING"],
+];
+
 function Mark({ className = "" }: { className?: string }) {
   return (
     <svg className={`mark ${className}`} viewBox="0 0 72 52" aria-hidden="true">
@@ -148,7 +155,7 @@ export default function Home() {
           <div className="hero-copy reveal-one">
             <div className="eyebrow"><span /> Information Systems Graduate · Indonesia</div>
             <p className="hero-kicker">Positioning file / Junior Full-Stack Engineer</p>
-            <h1 id="hero-title">Membangun sistem digital dengan arah <em>yang jelas</em> menuju AI.</h1>
+            <h1 id="hero-title">Building digital systems with a <em>clear path</em> toward AI.</h1>
             <p className="hero-summary">Fokus saya adalah membangun aplikasi web yang terstruktur dari interface hingga fondasinya. Di saat yang sama, saya sedang memperluas praktik ke AI Engineering melalui output terstruktur, evaluasi, dan reliability sebagai bagian dari sistem.</p>
             <div className="hero-actions">
               <a className="button button-light" href="#focus">Lihat fokus teknis <ArrowRight size={17} /></a>
@@ -165,7 +172,7 @@ export default function Home() {
             <div className="portrait-frame">
               <img src={ASSETS.portrait} alt="Foto portrait profesional Malika Fanyzar Azzahra." />
               <div className="portrait-overlay" aria-hidden="true" />
-              <div className="portrait-label"><span>Malika Fanyzar Azzahra</span><small>Full-Stack → AI Engineering</small></div>
+              <div className="portrait-label"><b>MA // ID.01</b><span>Malika Fanyzar Azzahra</span><small>Full-Stack → AI Engineering</small></div>
             </div>
             <div className="system-card">
               <div className="system-card-head"><TerminalSquare size={15} /><span>Snapshot engineering</span></div>
@@ -272,11 +279,14 @@ export default function Home() {
               <h2 id="proof-title">Bukti berikutnya lahir dari <em>build.</em></h2>
               <p>Website ini adalah baseline portfolio engineering. Tahap berikutnya adalah menambahkan case study aplikasi Full-Stack, repository publik, catatan arsitektur, status deployment, dan demo yang dapat diuji langsung.</p>
             </div>
-            <div className="proof-list">
-              <div><Check size={18} /><span>Case study aplikasi yang dapat dijalankan</span></div>
-              <div><Check size={18} /><span>Catatan arsitektur dan keputusan API</span></div>
-              <div><Check size={18} /><span>Project AI dengan bukti evaluation</span></div>
-              <div><Check size={18} /><span>Repository GitHub dan tautan deployment</span></div>
+            <div className="proof-list" aria-label="Register bukti portfolio yang direncanakan">
+              {proofRecords.map(([label, copy, status]) => (
+                <div key={label}>
+                  <Check size={18} />
+                  <span><small>{label}</small>{copy}</span>
+                  <b>{status}</b>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -299,7 +309,7 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div><Mark /><span>© 2026 Malika Fanyzar Azzahra</span><span>Indonesia</span></div>
+        <div><Mark /><span>MA // 01</span><span>© 2026 Malika Fanyzar Azzahra · Indonesia</span></div>
         <p>MA // Catatan Engineering</p>
         <a href="#top" aria-label="Kembali ke atas"><ArrowUpRight size={19} /></a>
       </footer>

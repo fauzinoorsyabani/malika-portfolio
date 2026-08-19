@@ -22,8 +22,11 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - CTA mengarah ke eksplorasi portfolio dan kontak terkait peluang kerja, bukan jasa konsultasi.
 - AI diposisikan sebagai jalur pengembangan yang terukur: retrieval, structured output, evaluation, reliability, dan deployment lebih penting daripada klaim agent atau chatbot semata.
 - Setelah data tersedia, bagian roadmap harus diprioritaskan untuk diganti menjadi case study nyata dan tautan GitHub atau demo.
-- Acid green menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
+- Pink magenta yang teredam menjadi sinyal primer untuk status, CTA, dan fokus; cyan dipakai terbatas sebagai penanda sistem sekunder dan bukan latar section dominan.
 - Monogram, wordmark, dan label `MA // 01` diperlakukan sebagai sistem stempel dossier yang konsisten pada header, portrait, contact, dan footer.
 - Supporting copy harus evidence-led: utamakan scope, decision, trade-off, roadmap, repository, deployment, evaluation, dan planned build daripada motivasi generik.
-- Headline utama, navigasi, dan CTA utama menggunakan Bahasa Indonesia profesional. Istilah English dipertahankan hanya untuk istilah engineering yang lazim, seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation.
+- Navigasi dan CTA utama menggunakan Bahasa Indonesia profesional. Headline hero utama menggunakan English untuk kebutuhan positioning kerja lintas pasar, sedangkan istilah engineering seperti Full-Stack, AI Engineering, RAG, deployment, dan evaluation dipertahankan apa adanya.
 - Setiap section utama membawa perangkat dossier yang terlihat, seperti numbered rail, status stamp `MA //`, metadata scope, atau penanda evidence agar identitas technical file berlanjut di seluruh halaman.
+- Muted magenta adalah aksen primer untuk CTA, fokus, status, dan highlight headline; cyan/teal dipakai sekunder hanya pada metadata sistem, roadmap state, atau anotasi teknis.
+- Portrait Malika diperlakukan sebagai aset dossier teknis: dibuat harmonis dengan palet magenta, diberi frame, stamp `MA // ID.01`, dan anotasi, bukan disajikan sebagai foto formal mentah.
+- Register bukti menggunakan format yang dapat diverifikasi: label case study, decision log, evaluation, dan release disertai status planned atau pending hingga artefak nyata tersedia.
