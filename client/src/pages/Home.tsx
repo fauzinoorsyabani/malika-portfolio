@@ -15,7 +15,6 @@ import {
   Network,
   ShieldCheck,
   Sparkles,
-  TerminalSquare,
   X,
 } from "lucide-react";
 
@@ -171,14 +170,6 @@ export default function Home() {
             <div className="portrait-grid" aria-hidden="true" />
             <div className="portrait-frame">
               <img src={ASSETS.portrait} alt="Foto portrait profesional Malika Fanyzar Azzahra." />
-              <div className="portrait-overlay" aria-hidden="true" />
-              <div className="portrait-label"><b>MA // ID.01</b><span>Malika Fanyzar Azzahra</span><small>Full-Stack → AI Engineering</small></div>
-            </div>
-            <div className="system-card">
-              <div className="system-card-head"><TerminalSquare size={15} /><span>Snapshot engineering</span></div>
-              <div className="system-card-line"><small>CAKUPAN BUILD</small><strong>Web interface + application logic</strong></div>
-              <div className="system-card-line"><small>PRAKTIK AI</small><strong>Structured output + evaluation mindset</strong></div>
-              <div className="system-card-line"><small>GAYA KERJA</small><strong>Keputusan tercatat, iterasi bertahap</strong></div>
             </div>
           </div>
 

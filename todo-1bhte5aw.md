@@ -13,3 +13,5 @@
 - [x] Mengganti aksen hijau dengan pink yang tetap kontras terhadap latar hitam.
 - [x] Mengembalikan headline utama hero ke Bahasa Inggris.
 - [x] Memverifikasi kontras dan tampilan responsif serta menjalankan pemeriksaan teknis; checkpoint palet baru siap disimpan.
+- [x] Menghapus filter gelap, overlay, label, dan panel snapshot dari portrait Malika.
+- [x] Memverifikasi portrait pada desktop dan mobile serta menjalankan pemeriksaan teknis; checkpoint koreksi siap disimpan.
