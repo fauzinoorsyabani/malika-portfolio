@@ -15,3 +15,7 @@
 - [x] Memverifikasi kontras dan tampilan responsif serta menjalankan pemeriksaan teknis; checkpoint palet baru siap disimpan.
 - [x] Menghapus filter gelap, overlay, label, dan panel snapshot dari portrait Malika.
 - [x] Memverifikasi portrait pada desktop dan mobile serta menjalankan pemeriksaan teknis; checkpoint koreksi siap disimpan.
+- [x] Menambahkan marquee otomatis dari kanan ke kiri yang memperkuat identitas portfolio engineering.
+- [x] Menambahkan motion terkoordinasi pada section, kartu, dan register tanpa mengganggu keterbacaan.
+- [x] Memverifikasi motion di desktop dan mobile serta reduced-motion sebelum menyimpan checkpoint.
+- [x] Mengubah seluruh copy portfolio menjadi Bahasa Inggris profesional, kecuali nama dan data identitas yang harus dipertahankan.

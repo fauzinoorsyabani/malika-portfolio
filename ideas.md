@@ -30,3 +30,5 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - Muted magenta adalah aksen primer untuk CTA, fokus, status, dan highlight headline; cyan/teal dipakai sekunder hanya pada metadata sistem, roadmap state, atau anotasi teknis.
 - Portrait Malika diperlakukan sebagai aset dossier teknis: dibuat harmonis dengan palet magenta, diberi frame, stamp `MA // ID.01`, dan anotasi, bukan disajikan sebagai foto formal mentah.
 - Register bukti menggunakan format yang dapat diverifikasi: label case study, decision log, evaluation, dan release disertai status planned atau pending hingga artefak nyata tersedia.
+- All public-facing portfolio copy uses professional English. Names, contact data, and industry-standard technical terms are retained as appropriate.
+- The original portrait remains unobscured and unfiltered at the user’s request; surrounding grid and dossier framing provide the visual integration without applying effects to the photograph.
