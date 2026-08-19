@@ -40,3 +40,5 @@
 - [x] Mengekstrak nama dan NPM terverifikasi dari dokumen tugas akhir.
 - [x] Menulis README portfolio yang memuat identitas, fitur, teknologi, cara menjalankan, dan tautan deployment.
 - [x] Memverifikasi README, mendorong pembaruannya ke GitHub, dan menyiapkan checkpoint.
+- [x] Mengecilkan portrait Malika lebih lanjut pada tampilan mobile tanpa mengubah hero desktop.
+- [x] Memverifikasi komposisi hero mobile dan menjalankan build produksi sebelum menyimpan checkpoint koreksi.

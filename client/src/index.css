@@ -396,9 +396,9 @@ h2 { margin: 0; color: var(--ink); font-size: clamp(43px, 5vw, 74px); font-weigh
   h1 { font-size: clamp(46px, 14vw, 69px); }
   .hero-summary { font-size: 15px; }
   .signal-row { margin-top: 32px; }
-  .hero-visual { width: 88%; min-height: 415px; max-width: 330px; justify-self: center; }
-  .portrait-frame { right: 13px; bottom: 0; }
-  .portrait-grid { right: -10px; bottom: 32px; left: 16px; }
+  .hero-visual { width: 76%; min-height: 350px; max-width: 270px; margin-top: 4px; justify-self: center; }
+  .portrait-frame { right: 10px; bottom: 0; }
+  .portrait-grid { right: -7px; bottom: 25px; left: 13px; }
   .hero-footnote { grid-column: 1; }
   .hero-footnote strong { font-size: 8px; }
   .marquee-set { padding-top: 15px; padding-bottom: 15px; }
