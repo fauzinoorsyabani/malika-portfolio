@@ -36,3 +36,5 @@ Situs memuat hero untuk positioning kerja, bagian Engineering Focus, pendekatan 
 - A Download CV CTA may use an animated request state until a real CV file or public download URL is provided; it must not imply a file is already downloadable.
 - Portrait Malika tetap natural dan tanpa efek; integrasinya dilakukan melalui frame dossier, grid sekitar, label metadata, dan ruang gelap/terang di sekelilingnya, bukan dengan mengubah foto.
 - Setiap section utama mempertahankan minimal satu sinyal dossier yang terlihat: rail bernomor, stamp `MA //`, metadata monospace, label evidence/status, atau grid teknis tipis.
+- Hero harus langsung menempatkan Malika sebagai kandidat Full-Stack Engineer dengan dasar Information Systems dan roadmap AI Engineering sebelum membahas solusi digital secara lebih luas.
+- Narasi public-facing menghindari gaya agensi atau jasa; setiap klaim diposisikan sebagai kompetensi, fokus area, decision log, planned build, roadmap, atau bukti portfolio.

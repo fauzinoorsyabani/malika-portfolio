@@ -28,3 +28,6 @@
 - [x] Memverifikasi Bahasa Indonesia dan roadmap yang dipulihkan pada desktop serta mobile, lalu menjalankan build produksi.
 - [x] Mengecilkan portrait Malika sedikit pada hero desktop dan mobile.
 - [x] Memverifikasi komposisi hero yang diperbarui pada desktop dan mobile; checkpoint siap disimpan.
+- [x] Meninjau CV dan referensi untuk mengidentifikasi fakta serta pencapaian yang dapat digunakan secara aman.
+- [x] Menyusun ulang hero dan isi portfolio agar berorientasi karya, kontribusi, dan hasil yang terverifikasi.
+- [x] Memverifikasi struktur konten baru pada desktop dan mobile serta menjalankan build produksi sebelum menyimpan checkpoint.
