@@ -5,3 +5,5 @@
 - [x] Menambahkan section marquee bergerak dari kanan ke kiri dengan konten relevan terhadap positioning Malika.
 - [x] Menjaga animasi menggunakan transform dan opacity saja, mendukung `prefers-reduced-motion`, serta menyesuaikan kecepatan untuk mobile.
 - [x] Memeriksa tampilan desktop dan mobile serta menjalankan type check dan production build.
+- [ ] Memberi jarak horizontal yang lebih nyaman untuk elemen yang berada dekat sisi kiri dan kanan layar.
+- [ ] Memverifikasi tampilan desktop dan mobile setelah penyesuaian jarak tepi.

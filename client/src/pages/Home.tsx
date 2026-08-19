@@ -196,18 +196,9 @@ export default function Home() {
                 <small>Information Systems</small>
               </div>
             </div>
-            <div className="evidence-ticket" aria-hidden="true">
-              <div><span>KASUS / 01</span><span>3 PERAN</span><span>27 VALID</span></div>
-              <i />
-              <p>lacak → tindak lanjut → jelas</p>
-            </div>
-            <div className="visual-caption top-caption">
-              <span>Analisis</span>
-              <span>dengan empati</span>
-            </div>
             <div className="visual-caption bottom-caption">
               <span className="caption-node" />
-              Mulberry Ink / #6B3D58
+              Malika Fanyzar Azzahra
             </div>
           </div>
 
