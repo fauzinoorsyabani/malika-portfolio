@@ -71,6 +71,23 @@ pnpm build
 pnpm start
 ```
 
+## Deploying to Vercel
+
+This repository includes a `vercel.json` file so Vercel deploys the project as a **static Vite frontend**. The application build generates two outputs: a static client bundle in `dist/public` and a small Express entry point for the existing hosting runtime. Vercel should publish the static client bundle, not run the Express server.
+
+When importing the repository into Vercel, use the following project settings. The committed `vercel.json` applies these values automatically; the table is included as a quick verification reference.
+
+| Vercel setting | Value |
+| --- | --- |
+| **Framework Preset** | Other |
+| **Install Command** | `pnpm install --frozen-lockfile` |
+| **Build Command** | `pnpm build` |
+| **Output Directory** | `dist/public` |
+| **Node.js version** | 20.x or newer |
+| **Production Branch** | `main` |
+
+If an old deployment is still failing, redeploy the newest `main` commit after pulling the configuration update. Do not use `dist` as the output directory because the deployable static site is located in `dist/public`.
+
 ## Project Structure
 
 ```text

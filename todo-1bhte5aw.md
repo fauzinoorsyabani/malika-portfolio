@@ -45,3 +45,7 @@
 - [x] Mengekstrak detail tugas akhir terverifikasi untuk case study dan mencatat bahwa tautan demo live akan ditambahkan kemudian.
 - [x] Menambahkan case study tugas akhir dengan status demo *Coming soon* serta tombol scroll-to-top yang muncul setelah scroll pada mobile.
 - [x] Memverifikasi fitur baru pada desktop dan mobile serta menjalankan build produksi; checkpoint dan pengiriman GitHub siap dilakukan.
+- [x] Memverifikasi branch utama dan mendorong commit terbaru ke GitHub privat.
+- [x] Memeriksa script build dan output folder project untuk mengidentifikasi penyebab kegagalan deployment Vercel.
+- [x] Menambahkan konfigurasi Vercel untuk frontend statis dan memvalidasi output build.
+- [ ] Menyimpan checkpoint, mendorong konfigurasi deployment ke GitHub, dan merangkum langkah redeploy di Vercel.
