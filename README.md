@@ -9,7 +9,7 @@
 | **Name** | Malika Fanyzar Azzahra |
 | **NPM** | **227007047** |
 | **Academic background** | Information Systems, Universitas Siliwangi |
-| **Location** | South Korean |
+| **Location** | South Korea |
 | **Portfolio focus** | Requirements analysis, systems analysis, digital solutions, Full-Stack Engineering, and AI Engineering roadmap |
 
 ## About the Portfolio
