@@ -48,4 +48,7 @@
 - [x] Memverifikasi branch utama dan mendorong commit terbaru ke GitHub privat.
 - [x] Memeriksa script build dan output folder project untuk mengidentifikasi penyebab kegagalan deployment Vercel.
 - [x] Menambahkan konfigurasi Vercel untuk frontend statis dan memvalidasi output build.
-- [ ] Menyimpan checkpoint, mendorong konfigurasi deployment ke GitHub, dan merangkum langkah redeploy di Vercel.
+- [x] Menyimpan checkpoint, mendorong konfigurasi deployment ke GitHub, dan menyiapkan langkah redeploy di Vercel.
+- [x] Menemukan file sumber portrait dan ikon untuk menggantikan referensi Manus-hosted.
+- [x] Mengemas aset agar tersedia pada deployment Vercel dan memperbarui referensi portfolio.
+- [x] Memverifikasi URL aset publik dan build produksi; checkpoint serta pengiriman perbaikan aset ke GitHub siap dilakukan.

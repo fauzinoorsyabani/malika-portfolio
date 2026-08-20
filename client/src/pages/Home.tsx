@@ -20,8 +20,8 @@ import {
 } from "lucide-react";
 
 const ASSETS = {
-  portrait: "/manus-storage/malika-portrait_f2240e5c.png",
-  mark: "/manus-storage/malika-monogram-mark_98ec5ab0.png",
+  portrait: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663567085695/EFXtwARINlAbmUmV.png",
+  mark: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663567085695/NaUEuUKdWQcBValw.png",
 };
 
 const navigation = [
